@@ -1,38 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Design System
-  Style: Bold Poster / Editorial Split
-  Archetype: Bold Poster (left text panel + right client photo)
-  Fonts: Outfit (Black 900) / Inter
-  Palette: primary #1A2DF3 (brand blue) | accent #FF4040 (brand coral) | dark #0D1147 (navy) | bg #F8F9FF | text #1A1A2E
-  Client colors sourced directly from junkbros509.com via Chrome
-  Logo: Wix CDN — real client logo
-  Photo: Wix CDN — real owners + truck
-  Anti-patterns avoided: no orange, no generic dark image overlay, no fake brand colors
--->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Junk Bros | Yakima's #1 Junk Removal & Hauling</title>
-<meta name="description" content="Junk Bros is Yakima's top-rated junk removal service. We haul appliances, furniture, hot tubs, estate cleanouts, and construction debris — same-day available. Call (509) 314-8132.">
+<title>Junk Bros | Yakima's #1 Junk Removal & Hauling | (509) 314-8132</title>
+<meta name="description" content="Junk Bros — Yakima's top-rated locally owned junk removal service. We haul appliances, furniture, hot tubs, estate cleanouts & construction debris. Same-day service available. Call (509) 314-8132.">
+<meta name="keywords" content="junk removal Yakima, junk hauling Yakima WA, appliance removal Yakima, hot tub removal Yakima, estate cleanout Yakima, junk removal near me, Junk Bros 509">
+<link rel="canonical" href="https://foresight-productions.github.io/fp-demo-junkbros/">
+<meta name="geo.region" content="US-WA">
+<meta name="geo.placename" content="Yakima, Washington">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://foresight-productions.github.io/fp-demo-junkbros/">
-<meta property="og:title" content="Junk Bros | Yakima's #1 Junk Removal · Yakima, WA">
-<meta property="og:description" content="Locally owned junk removal in Yakima, WA. Hot tubs, appliances, furniture, estate cleanouts — we haul it all. Same-day pickup available.">
+<meta property="og:title" content="Junk Bros | Yakima's #1 Junk Removal — (509) 314-8132">
+<meta property="og:description" content="Locally owned junk removal in Yakima, WA. Hot tubs, appliances, furniture, estate cleanouts — we haul it all. Same-day pickup available. Prices from $125.">
 <meta property="og:image" content="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_avif,quality_auto/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Junk Bros owners with their blue dump trailer in Yakima, WA">
-<meta property="og:site_name" content="Junk Bros">
+<meta property="og:site_name" content="Junk Bros 509">
 <meta property="og:locale" content="en_US">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Junk Bros | Yakima's #1 Junk Removal · Yakima, WA">
-<meta name="twitter:description" content="Locally owned junk removal in Yakima, WA. Hot tubs, appliances, furniture, estate cleanouts — we haul it all. Same-day pickup available.">
+<meta name="twitter:title" content="Junk Bros | Yakima's #1 Junk Removal — (509) 314-8132">
+<meta name="twitter:description" content="Locally owned junk removal in Yakima, WA. Prices from $125. Same-day available. Call or text (509) 314-8132.">
 <meta name="twitter:image" content="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_avif,quality_auto/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png">
+
+<!-- Schema: LocalBusiness + Services + FAQ + Reviews -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.junkbros509.com/#business",
+      "name": "Junk Bros 509",
+      "alternateName": "Junk Bros",
+      "description": "Locally owned and family operated full service junk removal company serving Yakima, WA and surrounding areas since 2018.",
+      "url": "https://www.junkbros509.com",
+      "telephone": "+15093148132",
+      "email": "junkbros509@gmail.com",
+      "priceRange": "$125 - $545",
+      "image": "https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png",
+      "logo": "https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "507 5th St",
+        "addressLocality": "Zillah",
+        "addressRegion": "WA",
+        "postalCode": "98953",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.3979,
+        "longitude": -120.2659
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "07:30",
+          "closes": "19:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/JunkBros509",
+        "https://www.instagram.com/junkbros509/"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Yakima", "containedIn": {"@type": "State", "name": "Washington"}},
+        {"@type": "City", "name": "Union Gap"},
+        {"@type": "City", "name": "Selah"},
+        {"@type": "City", "name": "Sunnyside"},
+        {"@type": "City", "name": "Zillah"},
+        {"@type": "City", "name": "Grandview"},
+        {"@type": "City", "name": "Toppenish"},
+        {"@type": "City", "name": "Prosser"},
+        {"@type": "City", "name": "Wapato"},
+        {"@type": "City", "name": "Moxee"},
+        {"@type": "City", "name": "West Valley"},
+        {"@type": "City", "name": "Terrace Heights"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Junk Removal Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Junk Removal", "areaServed": "Yakima, WA"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Appliance Removal", "areaServed": "Yakima, WA"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hot Tub Removal", "areaServed": "Yakima, WA"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estate Cleanout", "areaServed": "Yakima, WA"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construction Debris Removal", "areaServed": "Yakima, WA"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Yard Waste Removal", "areaServed": "Yakima, WA"}}
+        ]
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "Victoria Michael"},
+          "reviewBody": "Would absolutely recommend Junk Bros and their team — you won't be disappointed! They arrived right on time, were professional and efficient in their work and friendly to talk. Fair pricing and an overall great company to work with."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "Shonna Stroud"},
+          "reviewBody": "Responsive, professional, on time, respectful of property, fairly priced, and does wonderful cleanup work. Highly recommend Junk Bros for any junk removal needs in the Yakima area."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "200",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does junk removal cost in Yakima?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Junk Bros charges based on the volume of space your items take up in the truck. The minimum load fee is $125 and a full truck load is $545, with multiple price points in between. All prices include labor, tax, and disposal fees. Special items like hot tubs start at $375 and pool tables start at $275."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer same-day junk removal in Yakima?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes! Junk Bros offers same-day junk removal service in Yakima, WA and surrounding areas. Text us a photo of your items for a fast, no-obligation quote and we'll get it scheduled."}
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve?",
+          "acceptedAnswer": {"@type": "Answer", "text": "We serve Yakima, Union Gap, Selah, West Valley, Terrace Heights, Moxee, Wapato, Sunnyside, Zillah, Grandview, Toppenish, and Prosser, WA."}
+        },
+        {
+          "@type": "Question",
+          "name": "What items will you haul away?",
+          "acceptedAnswer": {"@type": "Answer", "text": "We take almost everything — household junk, appliances, furniture, hot tubs, mattresses, yard waste, construction debris, estate cleanouts, garage cleanouts, and more. If you're not sure, just text us a photo."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a free quote?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Simply call or text us at (509) 314-8132 with a photo of what you need hauled and we'll provide a free, no-obligation estimate on the spot. We provide all quotes on-site before starting any work."}
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,736 +163,451 @@
     --primary: #1A2DF3;
     --primary-dark: #1122CC;
     --primary-light: #4055F5;
+    --primary-glow: rgba(26,45,243,0.25);
     --accent: #FF4040;
-    --accent-dark: #E03030;
+    --accent-dark: #D03030;
     --dark: #0D1147;
-    --dark-mid: #1A2060;
+    --dark-mid: #141A5E;
     --text: #1A1A2E;
-    --text-muted: #6B7080;
+    --text-muted: #64748B;
     --bg: #F8F9FF;
     --bg-subtle: #EEF0FB;
     --surface: #FFFFFF;
+    --border: rgba(26,45,243,0.12);
     --font-head: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body {
-    font-family: var(--font-body);
-    background: var(--bg);
-    color: var(--text);
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
   /* ── NAV ── */
   #nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    height: 70px;
-    background: rgba(13, 17, 71, 0.96);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 2px solid rgba(26, 45, 243, 0.4);
-    transition: box-shadow 200ms ease;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 70px;
+    background: rgba(13,17,71,0.97);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(26,45,243,0.3);
+    transition: box-shadow 250ms ease;
   }
-  #nav.scrolled { box-shadow: 0 4px 30px rgba(13,17,71,0.5); }
-
-  .nav-logo-img {
-    max-height: 42px;
-    width: auto;
-    display: block;
-    filter: brightness(0) invert(1);
-  }
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2.25rem;
-    flex-shrink: 0;
-  }
-  .nav-links a {
-    font-family: var(--font-body);
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: rgba(255,255,255,0.75);
-    text-decoration: none;
-    letter-spacing: 0.4px;
-    transition: color 150ms ease;
-    cursor: pointer;
-  }
-  .nav-links a:hover { color: #FFFFFF; }
+  #nav.scrolled { box-shadow: 0 4px 40px rgba(13,17,71,0.6); }
+  .nav-logo-img { max-height: 40px; width: auto; background: #fff; border-radius: 6px; padding: 4px 10px; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; flex-shrink: 0; }
+  .nav-links a { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.7); text-decoration: none; letter-spacing: 0.3px; transition: color 150ms ease; }
+  .nav-links a:hover { color: #fff; }
   .nav-cta {
-    background: var(--primary) !important;
-    color: #FFFFFF !important;
-    padding: 0.5rem 1.25rem !important;
-    border-radius: 50px !important;
-    font-weight: 700 !important;
-    font-size: 0.875rem !important;
-    letter-spacing: 0.3px !important;
-    transition: background 150ms ease, transform 150ms ease !important;
-    white-space: nowrap;
+    background: var(--primary) !important; color: #fff !important;
+    padding: 0.5rem 1.25rem !important; border-radius: 50px !important;
+    font-weight: 700 !important; font-size: 0.85rem !important;
+    box-shadow: 0 0 20px var(--primary-glow);
+    transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease !important;
   }
-  .nav-cta:hover {
-    background: var(--primary-light) !important;
-    transform: translateY(-1px);
-  }
-  .nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 8px;
-    background: none;
-    border: none;
-    flex-shrink: 0;
-  }
+  .nav-cta:hover { background: var(--primary-light) !important; transform: translateY(-1px); box-shadow: 0 4px 24px rgba(26,45,243,0.5) !important; }
+  .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; flex-shrink: 0; }
   .nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; transition: all 200ms ease; }
-
   .nav-overlay {
-    position: fixed; inset: 0;
-    background: var(--dark);
-    z-index: 999;
+    position: fixed; inset: 0; background: var(--dark); z-index: 999;
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem;
-    opacity: 0; pointer-events: none;
-    transition: opacity 200ms ease;
+    opacity: 0; pointer-events: none; transition: opacity 200ms ease;
   }
   .nav-overlay.open { opacity: 1; pointer-events: all; }
-  .nav-overlay a {
-    font-family: var(--font-head);
-    font-size: 2.25rem; font-weight: 900;
-    color: #fff; text-decoration: none; text-transform: uppercase; letter-spacing: -1px;
-    transition: color 150ms ease;
-  }
+  .nav-overlay a { font-family: var(--font-head); font-size: 2.25rem; font-weight: 900; color: #fff; text-decoration: none; text-transform: uppercase; letter-spacing: -1px; transition: color 150ms ease; }
   .nav-overlay a:hover { color: var(--primary); }
-  .nav-overlay .overlay-cta {
-    background: var(--primary);
-    color: #fff; padding: 1rem 2.5rem;
-    font-size: 1.1rem; border-radius: 50px; margin-top: 0.5rem;
-  }
+  .nav-overlay .overlay-cta { background: var(--primary); color: #fff; padding: 1rem 2.5rem; border-radius: 50px; margin-top: 0.5rem; font-size: 1.1rem; }
 
-  /* ── HERO — EDITORIAL SPLIT ── */
-  .hero {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 70px;
-  }
+  /* ── HERO ── */
+  .hero { min-height: 100vh; min-height: 100svh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 70px; }
   .hero-left {
     background: var(--dark);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; flex-direction: column; justify-content: center;
     padding: 4rem 5% 4rem 7%;
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
   }
   .hero-left::before {
-    content: '';
-    position: absolute;
-    bottom: -80px; left: -80px;
-    width: 300px; height: 300px;
-    background: var(--primary);
-    opacity: 0.08;
-    border-radius: 50%;
+    content: ''; position: absolute; bottom: -100px; left: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(26,45,243,0.18) 0%, transparent 70%);
   }
   .hero-left::after {
-    content: '';
-    position: absolute;
-    top: -40px; right: -40px;
-    width: 180px; height: 180px;
-    background: var(--accent);
-    opacity: 0.06;
-    border-radius: 50%;
+    content: ''; position: absolute; top: 10%; right: -60px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,64,64,0.1) 0%, transparent 70%);
   }
 
   .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    background: rgba(26,45,243,0.2);
-    border: 1px solid rgba(26,45,243,0.4);
-    border-radius: 50px;
-    padding: 0.35rem 1rem;
-    font-family: var(--font-head);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 1.75rem;
-    width: fit-content;
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: rgba(26,45,243,0.18); border: 1px solid rgba(26,45,243,0.35);
+    border-radius: 50px; padding: 0.35rem 1rem;
+    font-family: var(--font-head); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.75);
+    margin-bottom: 1.75rem; width: fit-content; position: relative; z-index: 1;
   }
-  .eyebrow-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
+  .eyebrow-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; flex-shrink: 0; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
 
   .hero-headline {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: clamp(2.75rem, 4.5vw, 5.5rem);
-    line-height: 1;
-    letter-spacing: -2px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    position: relative; z-index: 1;
+    font-family: var(--font-head); font-weight: 900;
+    font-size: clamp(2.6rem, 4.2vw, 5.25rem);
+    line-height: 1.0; letter-spacing: -2px; color: #fff; text-transform: uppercase;
+    margin-bottom: 1.5rem; position: relative; z-index: 1;
   }
-  .hero-headline .hl-blue { color: var(--primary); }
-  .hero-headline .hl-red { color: var(--accent); }
+  .hl-blue { color: var(--primary); }
+  .hl-red { color: var(--accent); }
 
   .hero-sub {
-    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
-    font-weight: 400;
-    color: rgba(255,255,255,0.6);
-    max-width: 420px;
-    line-height: 1.75;
-    margin-bottom: 2.25rem;
-    position: relative; z-index: 1;
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem); color: rgba(255,255,255,0.58);
+    max-width: 420px; line-height: 1.75; margin-bottom: 2.25rem; position: relative; z-index: 1;
   }
-
-  .hero-btns {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    position: relative; z-index: 1;
-    margin-bottom: 2.5rem;
-  }
+  .hero-btns { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; margin-bottom: 2.5rem; }
 
   .btn-primary {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 0.95rem;
-    letter-spacing: 0.3px;
-    background: var(--primary);
-    color: #fff;
-    border: 2px solid var(--primary);
-    padding: 0.875rem 1.75rem;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-family: var(--font-head); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.2px;
+    background: var(--primary); color: #fff; border: 2px solid var(--primary);
+    padding: 0.875rem 1.75rem; border-radius: 50px; cursor: pointer; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    box-shadow: 0 4px 24px var(--primary-glow);
     transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease;
-    box-shadow: 0 4px 20px rgba(26,45,243,0.4);
   }
-  .btn-primary:hover {
-    background: var(--primary-light);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(26,45,243,0.5);
-  }
-
+  .btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(26,45,243,0.45); }
   .btn-outline {
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 0.95rem;
-    background: transparent;
-    color: #fff;
-    border: 2px solid rgba(255,255,255,0.35);
-    padding: 0.875rem 1.75rem;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
+    background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3);
+    padding: 0.875rem 1.75rem; border-radius: 50px; cursor: pointer; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.5rem;
     transition: border-color 150ms ease, background 150ms ease;
   }
-  .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.07); }
 
-  .hero-badges {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    position: relative; z-index: 1;
-  }
-  .hero-badge {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.55);
-    font-weight: 500;
-  }
-  .hero-badge svg { width: 16px; height: 16px; color: var(--primary); flex-shrink: 0; }
+  .hero-badges { display: flex; gap: 1.5rem; flex-wrap: wrap; position: relative; z-index: 1; }
+  .hero-badge { display: flex; align-items: center; gap: 0.45rem; font-size: 0.78rem; color: rgba(255,255,255,0.48); font-weight: 500; }
+  .hero-badge svg { width: 15px; height: 15px; color: var(--primary); flex-shrink: 0; }
 
-  .hero-right {
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-  .hero-photo-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, var(--dark) 0%, transparent 30%);
-  }
+  .hero-right { position: relative; overflow: hidden; }
+  .hero-photo { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+  .hero-photo-overlay { position: absolute; inset: 0; background: linear-gradient(to right, var(--dark) 0%, transparent 25%); }
 
   /* ── PROOF BAR ── */
   .proof-bar {
     background: var(--primary);
-    padding: 1.1rem 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    overflow: hidden;
+    padding: 1rem 5%;
+    display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap;
   }
-  .proof-item {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
-    color: #fff;
-    text-transform: uppercase;
-    white-space: nowrap;
+  .proof-item { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-head); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.5px; color: #fff; text-transform: uppercase; white-space: nowrap; }
+  .proof-stars { color: #FFE066; letter-spacing: 2px; }
+  .proof-sep { width: 1px; height: 18px; background: rgba(255,255,255,0.25); flex-shrink: 0; }
+
+  /* ── SHARED SECTION STYLES ── */
+  .section-label {
+    font-family: var(--font-head); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
+    display: flex; align-items: center; gap: 0.6rem;
   }
-  .proof-stars { letter-spacing: 2px; }
-  .proof-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.3); flex-shrink: 0; }
+  .section-label::before { content: ''; display: block; width: 24px; height: 2px; background: var(--accent); flex-shrink: 0; }
+  .section-title {
+    font-family: var(--font-head); font-weight: 900;
+    font-size: clamp(2rem, 3.8vw, 3.1rem); line-height: 1.05;
+    letter-spacing: -1.5px; text-transform: uppercase; color: var(--text); margin-bottom: 0.75rem;
+  }
+  .section-title .t-blue { color: var(--primary); }
+  .section-sub { font-size: 0.975rem; color: var(--text-muted); max-width: 540px; line-height: 1.75; margin-bottom: 3rem; }
 
   /* ── SERVICES ── */
   .services { padding: 6rem 7%; background: var(--bg); }
-
-  .section-label {
-    font-family: var(--font-head);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-  }
-  .section-title {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: clamp(2rem, 4vw, 3.25rem);
-    line-height: 1.05;
-    letter-spacing: -1.5px;
-    text-transform: uppercase;
-    color: var(--text);
-    margin-bottom: 0.75rem;
-  }
-  .section-title .t-blue { color: var(--primary); }
-  .section-sub {
-    font-size: 1rem;
-    color: var(--text-muted);
-    max-width: 520px;
-    line-height: 1.7;
-    margin-bottom: 3.5rem;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-  }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   .service-card {
-    background: var(--surface);
-    border: 1.5px solid #E2E6F8;
-    border-radius: 12px;
-    padding: 2rem 1.75rem;
-    position: relative;
-    transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
-    overflow: hidden;
+    background: var(--surface); border: 1.5px solid var(--border);
+    border-radius: 14px; padding: 2rem 1.75rem; position: relative; overflow: hidden;
+    transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
   }
   .service-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--primary);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 250ms ease;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    transform: scaleX(0); transform-origin: left; transition: transform 250ms ease;
   }
-  .service-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,45,243,0.12); }
+  .service-card:hover { border-color: rgba(26,45,243,0.3); transform: translateY(-5px); box-shadow: 0 16px 48px rgba(26,45,243,0.1); }
   .service-card:hover::before { transform: scaleX(1); }
-
   .service-icon-wrap {
-    width: 48px; height: 48px;
-    background: var(--bg-subtle);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 1.25rem;
-    transition: background 200ms ease;
+    width: 48px; height: 48px; background: var(--bg-subtle); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;
+    transition: background 220ms ease;
   }
   .service-card:hover .service-icon-wrap { background: rgba(26,45,243,0.1); }
   .service-icon-wrap svg { width: 24px; height: 24px; color: var(--primary); }
+  .service-name { font-family: var(--font-head); font-weight: 800; font-size: 0.98rem; letter-spacing: -0.3px; text-transform: uppercase; color: var(--text); margin-bottom: 0.5rem; }
+  .service-desc { font-size: 0.875rem; line-height: 1.65; color: var(--text-muted); }
 
-  .service-name {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 1rem;
-    letter-spacing: -0.3px;
-    text-transform: uppercase;
-    color: var(--text);
-    margin-bottom: 0.5rem;
+  /* ── PRICING ── */
+  .pricing { padding: 6rem 7%; background: var(--dark); }
+  .pricing .section-title { color: #fff; }
+  .pricing .section-label::before { background: var(--accent); }
+  .pricing .section-sub { color: rgba(255,255,255,0.5); margin-bottom: 3rem; }
+
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+  .pricing-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px; padding: 2.25rem 2rem; text-align: center; position: relative;
+    transition: border-color 220ms ease, transform 220ms ease, background 220ms ease;
   }
-  .service-desc {
-    font-size: 0.875rem;
-    line-height: 1.65;
-    color: var(--text-muted);
+  .pricing-card.featured {
+    background: var(--primary); border-color: var(--primary);
+    box-shadow: 0 20px 60px rgba(26,45,243,0.4); transform: scale(1.03);
   }
+  .pricing-card:not(.featured):hover { border-color: rgba(255,255,255,0.25); transform: translateY(-4px); }
+  .pricing-badge {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: #fff; font-family: var(--font-head);
+    font-size: 0.65rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 0.3rem 1rem; border-radius: 50px;
+  }
+  .pricing-tier { font-family: var(--font-head); font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 0.75rem; }
+  .pricing-card.featured .pricing-tier { color: rgba(255,255,255,0.8); }
+  .pricing-price { font-family: var(--font-head); font-weight: 900; font-size: 3rem; color: #fff; line-height: 1; letter-spacing: -2px; margin-bottom: 0.25rem; }
+  .pricing-desc { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 1.5rem; line-height: 1.5; }
+  .pricing-card.featured .pricing-desc { color: rgba(255,255,255,0.75); }
+  .pricing-detail { font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+  .pricing-cta {
+    display: inline-block; margin-top: 1.5rem;
+    font-family: var(--font-head); font-weight: 800; font-size: 0.85rem;
+    background: rgba(255,255,255,0.15); color: #fff;
+    padding: 0.6rem 1.5rem; border-radius: 50px; text-decoration: none;
+    transition: background 150ms ease;
+  }
+  .pricing-card.featured .pricing-cta { background: rgba(255,255,255,0.25); }
+  .pricing-cta:hover { background: rgba(255,255,255,0.25); }
+
+  .surcharges-title {
+    font-family: var(--font-head); font-weight: 700; font-size: 0.75rem;
+    letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 1.25rem;
+  }
+  .surcharges-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .surcharge-pill {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px; padding: 0.4rem 1rem;
+    font-size: 0.82rem; color: rgba(255,255,255,0.65); font-weight: 500;
+  }
+  .surcharge-pill strong { color: #fff; font-weight: 700; }
 
   /* ── ABOUT ── */
-  .about {
-    padding: 6rem 7%;
-    background: var(--dark);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-  }
-
+  .about { padding: 6rem 7%; background: var(--bg-subtle); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
   .about-img-wrap { position: relative; }
   .about-img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    display: block;
-    border-radius: 16px;
-    border: 3px solid rgba(26,45,243,0.5);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;
+    border-radius: 18px; border: 2px solid rgba(26,45,243,0.25);
+    box-shadow: 0 24px 80px rgba(13,17,71,0.2);
   }
   .about-badge {
-    position: absolute;
-    bottom: -16px; right: -16px;
-    background: var(--primary);
-    border-radius: 12px;
-    padding: 1rem 1.5rem;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(26,45,243,0.5);
-    border: 3px solid var(--dark);
+    position: absolute; bottom: -16px; right: -16px;
+    background: var(--primary); border-radius: 14px; padding: 1rem 1.5rem; text-align: center;
+    box-shadow: 0 12px 32px rgba(26,45,243,0.4); border: 3px solid var(--bg-subtle);
   }
-  .about-badge-num {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 2rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .about-badge-label {
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.8);
-    margin-top: 0.2rem;
-  }
+  .about-badge-num { font-family: var(--font-head); font-weight: 900; font-size: 2rem; color: #fff; line-height: 1; }
+  .about-badge-label { font-size: 0.62rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-top: 0.2rem; }
+  .about-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem; }
+  .about-stat-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 1.1rem 1.25rem; }
+  .about-stat-num { font-family: var(--font-head); font-weight: 900; font-size: 2rem; color: var(--primary); line-height: 1; }
+  .about-stat-label { font-size: 0.75rem; font-weight: 500; color: var(--text-muted); margin-top: 0.25rem; }
+  .about-trust { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+  .about-trust li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; }
+  .about-trust li svg { width: 17px; height: 17px; color: var(--primary); flex-shrink: 0; margin-top: 2px; }
 
-  .about-content .section-title { color: #fff; }
-  .about-content .section-sub { color: rgba(255,255,255,0.55); margin-bottom: 2rem; }
+  /* ── REVIEWS ── */
+  .reviews { padding: 6rem 7%; background: var(--dark); }
+  .reviews .section-title { color: #fff; }
+  .reviews .section-label::before { background: var(--accent); }
+  .reviews .section-sub { color: rgba(255,255,255,0.5); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
+  .review-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 2rem 1.75rem;
+    transition: border-color 220ms ease, transform 220ms ease, background 220ms ease;
+    position: relative; overflow: hidden;
+  }
+  .review-card::before {
+    content: '"'; position: absolute; top: -10px; left: 20px;
+    font-family: var(--font-head); font-size: 8rem; color: rgba(26,45,243,0.15);
+    line-height: 1; pointer-events: none; font-weight: 900;
+  }
+  .review-card:hover { border-color: rgba(26,45,243,0.4); transform: translateY(-5px); background: rgba(26,45,243,0.08); }
+  .review-stars { color: #FFE066; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 1rem; position: relative; }
+  .review-source { font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 1rem; }
+  .review-quote { font-size: 0.9rem; line-height: 1.72; color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; font-style: italic; position: relative; }
+  .review-name { font-family: var(--font-head); font-weight: 800; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; }
+  .review-role { font-size: 0.75rem; color: rgba(255,255,255,0.35); margin-top: 0.15rem; }
 
-  .about-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .about-stat-card {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 1.1rem 1.25rem;
-  }
-  .about-stat-num {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 2rem;
-    color: var(--primary);
-    line-height: 1;
-  }
-  .about-stat-label {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: rgba(255,255,255,0.5);
-    margin-top: 0.25rem;
-    letter-spacing: 0.3px;
-  }
-
-  .about-trust { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
-  .about-trust li {
-    display: flex; align-items: flex-start; gap: 0.65rem;
-    font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.5;
-  }
-  .about-trust li svg { width: 18px; height: 18px; color: var(--primary); flex-shrink: 0; margin-top: 1px; }
-
-  /* ── TESTIMONIALS ── */
-  .testimonials { padding: 6rem 7%; background: var(--bg-subtle); }
-
-  .test-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    margin-top: 3rem;
-  }
-  .test-card {
-    background: var(--surface);
-    border: 1.5px solid #E2E6F8;
-    border-radius: 12px;
-    padding: 2rem 1.75rem;
+  /* ── SERVICE AREAS ── */
+  .service-areas { padding: 6rem 7%; background: var(--bg); }
+  .areas-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 4rem; }
+  .areas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .area-card {
+    background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px;
+    padding: 1.25rem 1.25rem; text-decoration: none;
     transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+    display: block;
   }
-  .test-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(26,45,243,0.12);
+  .area-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(26,45,243,0.1); }
+  .area-city { font-family: var(--font-head); font-weight: 800; font-size: 0.95rem; color: var(--text); margin-bottom: 0.2rem; }
+  .area-state { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
+  .area-tag {
+    display: inline-block; margin-top: 0.6rem;
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.5px;
+    color: var(--primary); background: var(--bg-subtle); padding: 0.2rem 0.6rem; border-radius: 50px;
   }
-  .test-stars { color: #F59E0B; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 1rem; }
-  .test-quote { font-size: 0.9rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.25rem; font-style: italic; }
-  .test-name { font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text); }
-  .test-role { font-size: 0.775rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+  /* ── FAQ ── */
+  .faq { padding: 6rem 7%; background: var(--bg-subtle); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+  .faq-item {
+    background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px;
+    padding: 1.75rem 2rem; cursor: pointer;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+  }
+  .faq-item:hover { border-color: rgba(26,45,243,0.3); box-shadow: 0 4px 20px rgba(26,45,243,0.07); }
+  .faq-q {
+    font-family: var(--font-head); font-weight: 800; font-size: 0.95rem; color: var(--text);
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .faq-q svg { width: 18px; height: 18px; color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+  .faq-a { font-size: 0.875rem; line-height: 1.7; color: var(--text-muted); }
 
   /* ── CTA BANNER ── */
   .cta-banner {
-    background: var(--primary);
-    padding: 5rem 7%;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    background: var(--primary); padding: 5rem 7%; text-align: center;
+    position: relative; overflow: hidden;
   }
   .cta-banner::before {
-    content: '509';
-    position: absolute;
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 20rem;
-    color: rgba(255,255,255,0.04);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: -10px;
-    pointer-events: none;
-    white-space: nowrap;
+    content: '509'; position: absolute; font-family: var(--font-head); font-weight: 900;
+    font-size: 18rem; color: rgba(255,255,255,0.04);
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    letter-spacing: -8px; pointer-events: none; white-space: nowrap;
   }
-  .cta-banner-label {
-    font-family: var(--font-head);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.65);
-    margin-bottom: 0.75rem;
-    position: relative; z-index: 1;
-  }
-  .cta-banner-title {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: clamp(1.75rem, 4vw, 3rem);
-    line-height: 1.1;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 1.75rem;
-    position: relative; z-index: 1;
-  }
-  .btn-dark {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 1rem;
-    background: var(--dark);
-    color: #fff;
-    border: 2px solid var(--dark);
-    padding: 0.875rem 2rem;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    transition: transform 150ms ease, box-shadow 150ms ease;
-    position: relative; z-index: 1;
-  }
-  .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.4); }
+  .cta-banner-label { font-family: var(--font-head); font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.75rem; position: relative; z-index: 1; }
+  .cta-banner-title { font-family: var(--font-head); font-weight: 900; font-size: clamp(1.75rem, 3.5vw, 2.75rem); line-height: 1.1; letter-spacing: -1px; text-transform: uppercase; color: #fff; margin-bottom: 1.75rem; position: relative; z-index: 1; }
+  .btn-dark { font-family: var(--font-head); font-weight: 800; font-size: 1rem; background: var(--dark); color: #fff; border: 2px solid var(--dark); padding: 0.9rem 2rem; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 6px 24px rgba(0,0,0,0.3); transition: transform 150ms ease, box-shadow 150ms ease; position: relative; z-index: 1; }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,0.4); }
 
   /* ── CONTACT ── */
-  .contact {
-    padding: 6rem 7%;
-    background: var(--bg);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: start;
-  }
-  .contact-info .section-title { font-size: clamp(1.75rem, 3vw, 2.5rem); }
-  .contact-phone-block { margin: 1.75rem 0 1.5rem; }
-  .contact-phone-label {
-    font-family: var(--font-head);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 0.4rem;
-  }
-  .contact-phone a {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: clamp(1.75rem, 3vw, 2.75rem);
-    color: var(--primary);
-    text-decoration: none;
-    letter-spacing: -1px;
-    display: block;
-    transition: color 150ms ease;
-  }
+  .contact { padding: 6rem 7%; background: var(--bg); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-phone-label { font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin: 1.75rem 0 0.35rem; }
+  .contact-phone a { font-family: var(--font-head); font-weight: 900; font-size: clamp(1.75rem, 3vw, 2.75rem); color: var(--primary); text-decoration: none; letter-spacing: -1px; display: block; transition: color 150ms ease; }
   .contact-phone a:hover { color: var(--primary-light); }
-  .contact-sub { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.25rem; }
+  .contact-sub { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.35rem; }
   .contact-sub a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
   .contact-sub a:hover { color: var(--primary); }
-
-  .hours-title {
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text);
-    margin: 1.75rem 0 0.75rem;
-  }
+  .hours-title { font-family: var(--font-head); font-weight: 700; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text); margin: 1.75rem 0 0.75rem; }
   .hours-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
-  .hours-list li {
-    display: flex; justify-content: space-between;
-    font-size: 0.875rem; color: var(--text-muted);
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--bg-subtle);
-  }
+  .hours-list li { display: flex; justify-content: space-between; font-size: 0.875rem; color: var(--text-muted); padding: 0.5rem 0; border-bottom: 1px solid var(--bg-subtle); }
   .hours-list li span:first-child { font-weight: 500; color: var(--text); }
+  .social-links { display: flex; gap: 0.75rem; margin-top: 1.75rem; }
+  .social-link {
+    width: 40px; height: 40px; border-radius: 10px; border: 1.5px solid var(--border);
+    display: flex; align-items: center; justify-content: center; text-decoration: none;
+    color: var(--text-muted); transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+  }
+  .social-link:hover { border-color: var(--primary); color: var(--primary); background: rgba(26,45,243,0.05); }
+  .social-link svg { width: 18px; height: 18px; }
 
   .contact-form { display: flex; flex-direction: column; gap: 1rem; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
-  .form-group label {
-    font-family: var(--font-head);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--text);
-  }
+  .form-group label { font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text); }
   .form-group input,
   .form-group textarea,
   .form-group select {
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    color: var(--text);
-    background: var(--surface);
-    border: 1.5px solid #D0D5EB;
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    outline: none;
-    width: 100%;
-    transition: border-color 150ms ease, box-shadow 150ms ease;
-    -webkit-appearance: none;
+    font-family: var(--font-body); font-size: 0.925rem; color: var(--text);
+    background: var(--surface); border: 1.5px solid #D5DBF0; border-radius: 10px;
+    padding: 0.75rem 1rem; outline: none; width: 100%;
+    transition: border-color 150ms ease, box-shadow 150ms ease; -webkit-appearance: none;
   }
   .form-group input:focus,
   .form-group textarea:focus,
-  .form-group select:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(26,45,243,0.1);
-  }
+  .form-group select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(26,45,243,0.1); }
   .form-group textarea { resize: vertical; min-height: 110px; }
   .form-submit {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 1rem;
-    letter-spacing: 0.3px;
-    background: var(--primary);
-    color: #fff;
-    border: 2px solid var(--primary);
-    border-radius: 50px;
-    padding: 0.875rem 2rem;
-    cursor: pointer;
-    width: 100%;
-    box-shadow: 0 4px 20px rgba(26,45,243,0.35);
+    font-family: var(--font-head); font-weight: 800; font-size: 1rem; letter-spacing: 0.2px;
+    background: var(--primary); color: #fff; border: none; border-radius: 50px;
+    padding: 0.9rem 2rem; cursor: pointer; width: 100%;
+    box-shadow: 0 4px 24px var(--primary-glow);
     transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease;
   }
-  .form-submit:hover {
-    background: var(--primary-light);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(26,45,243,0.45);
-  }
+  .form-submit:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(26,45,243,0.4); }
 
   /* ── FOOTER ── */
-  footer {
-    background: var(--dark);
-    border-top: 2px solid rgba(26,45,243,0.3);
-    padding: 2.5rem 7%;
+  footer { background: var(--dark); border-top: 1px solid rgba(26,45,243,0.25); padding: 3rem 7%; }
+  .footer-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 3rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .footer-brand-col { max-width: 280px; }
+  .footer-logo { max-height: 36px; width: auto; background: #fff; border-radius: 5px; padding: 3px 8px; margin-bottom: 1rem; }
+  .footer-tagline { font-size: 0.85rem; color: rgba(255,255,255,0.4); line-height: 1.65; }
+  .footer-socials { display: flex; gap: 0.65rem; margin-top: 1.25rem; }
+  .footer-social {
+    width: 36px; height: 36px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgba(255,255,255,0.45);
+    transition: border-color 150ms ease, color 150ms ease;
   }
-  .footer-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-  .footer-logo { max-height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.9; }
-  .footer-links { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
-  .footer-links a {
-    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.4px;
-    color: rgba(255,255,255,0.45); text-decoration: none; transition: color 150ms ease;
-  }
+  .footer-social:hover { border-color: var(--primary); color: var(--primary); }
+  .footer-social svg { width: 16px; height: 16px; }
+  .footer-col-title { font-family: var(--font-head); font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 1rem; }
+  .footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 150ms ease; }
   .footer-links a:hover { color: #fff; }
-  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+  .footer-credit { font-size: 0.78rem; color: rgba(255,255,255,0.2); }
 
   /* ── ANIMATIONS ── */
-  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 550ms ease, transform 550ms ease; }
+  .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 600ms cubic-bezier(.16,1,.3,1), transform 600ms cubic-bezier(.16,1,.3,1); }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up-delay-1 { transition-delay: 100ms; }
+  .fade-up-delay-2 { transition-delay: 200ms; }
+  .fade-up-delay-3 { transition-delay: 300ms; }
+
   @media (prefers-reduced-motion: reduce) {
-    .fade-up { opacity: 1; transform: none; transition: none; }
-    * { transition: none !important; animation: none !important; }
+    .fade-up, .eyebrow-dot { opacity: 1; transform: none; transition: none; animation: none; }
   }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     .hero { grid-template-columns: 1fr; }
     .hero-right { display: none; }
-    .hero-left { padding: 4rem 7%; min-height: calc(100vh - 70px); }
-    .about { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-left { min-height: calc(100vh - 70px); padding: 4rem 7%; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+    .pricing-card.featured { transform: scale(1); }
+    .areas-grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 900px) {
     .services-grid { grid-template-columns: repeat(2, 1fr); }
-    .test-grid { grid-template-columns: 1fr; }
+    .about { grid-template-columns: 1fr; gap: 3rem; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
     .contact { grid-template-columns: 1fr; gap: 3rem; }
+    .areas-intro { grid-template-columns: 1fr; gap: 0; }
+    .areas-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { gap: 2rem; }
   }
   @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .nav-toggle { display: flex; }
-    .hero-left { padding: 3rem 1.5rem; }
+    .nav-links { display: none; } .nav-toggle { display: flex; }
+    .hero-left { padding: 3rem 5%; }
     .hero-btns { flex-direction: column; align-items: flex-start; }
-    .hero-btns .btn-primary,
-    .hero-btns .btn-outline { width: 100%; max-width: 320px; justify-content: center; }
-    .proof-sep { display: none; }
-    .proof-bar { gap: 1rem; padding: 1rem 5%; }
-    .proof-item { font-size: 0.75rem; }
-    .services { padding: 4rem 5%; }
-    .about { padding: 4rem 5%; }
-    .testimonials { padding: 4rem 5%; }
-    .contact { padding: 4rem 5%; }
+    .hero-btns .btn-primary, .hero-btns .btn-outline { width: 100%; max-width: 320px; justify-content: center; }
+    .proof-sep { display: none; } .proof-bar { gap: 1rem; }
+    .services { padding: 4rem 5%; } .pricing { padding: 4rem 5%; }
+    .about { padding: 4rem 5%; } .reviews { padding: 4rem 5%; }
+    .service-areas { padding: 4rem 5%; } .faq { padding: 4rem 5%; }
+    .contact { padding: 4rem 5%; } footer { padding: 2.5rem 5%; }
     .cta-banner { padding: 3.5rem 5%; }
     .about-badge { bottom: 0; right: 0.5rem; }
     .about-img-wrap { padding-bottom: 2rem; }
     .form-row { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; text-align: center; }
-    .footer-links { justify-content: center; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-top { flex-direction: column; }
   }
   @media (max-width: 480px) {
     .services-grid { grid-template-columns: 1fr; }
     .about-stats { grid-template-columns: 1fr; }
+    .areas-grid { grid-template-columns: 1fr 1fr; }
+    .pricing-grid { max-width: 100%; }
   }
 </style>
 </head>
@@ -780,26 +615,25 @@
 
 <!-- NAV -->
 <header id="nav">
-  <a href="#">
-    <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="nav-logo-img">
-  </a>
+  <a href="#"><img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="nav-logo-img"></a>
   <nav class="nav-links">
     <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
     <a href="#about">About</a>
     <a href="#reviews">Reviews</a>
+    <a href="#service-areas">Areas</a>
     <a href="#contact">Contact</a>
     <a href="tel:5093148132" class="nav-cta">Call Now</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </header>
 
-<!-- MOBILE OVERLAY -->
 <div class="nav-overlay" id="navOverlay">
   <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#pricing" onclick="closeMenu()">Pricing</a>
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#service-areas" onclick="closeMenu()">Areas</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
   <a href="tel:5093148132" class="overlay-cta" onclick="closeMenu()">(509) 314-8132</a>
 </div>
@@ -807,211 +641,241 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">
-      <span class="eyebrow-dot"></span>
-      Yakima, WA &nbsp;·&nbsp; Est. 2018
-    </div>
-    <h1 class="hero-headline">
-      Yakima's<br>
-      <span class="hl-blue">Junk Removal</span><br>
-      Experts.
-    </h1>
-    <p class="hero-sub">Locally owned and family operated. We haul appliances, furniture, hot tubs, construction debris, and full estate cleanouts — same-day service available. Text us a photo for a free quote.</p>
+    <div class="hero-eyebrow"><span class="eyebrow-dot"></span>Yakima, WA &nbsp;·&nbsp; Est. 2018</div>
+    <h1 class="hero-headline">Yakima's<br><span class="hl-blue">Junk Removal</span><br>Experts.</h1>
+    <p class="hero-sub">Locally owned and family operated. We haul appliances, furniture, hot tubs, estate cleanouts, and construction debris across Yakima Valley — same-day service available. Text us a photo for an instant quote.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">
-        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
         Get a Free Quote
       </a>
       <a href="tel:5093148132" class="btn-outline">
-        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
         (509) 314-8132
       </a>
     </div>
     <div class="hero-badges">
-      <div class="hero-badge">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Licensed &amp; Insured
-      </div>
-      <div class="hero-badge">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        Same-Day Available
-      </div>
-      <div class="hero-badge">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        200+ 5-Star Reviews
-      </div>
+      <div class="hero-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Licensed &amp; Insured</div>
+      <div class="hero-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>Same-Day Available</div>
+      <div class="hero-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>200+ 5-Star Reviews</div>
     </div>
   </div>
   <div class="hero-right">
-    <img
-      src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png"
-      alt="Junk Bros owners with their blue dump trailer in Yakima, WA"
-      class="hero-photo"
-    >
+    <img src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png" alt="Junk Bros owners with their truck in Yakima, WA" class="hero-photo">
     <div class="hero-photo-overlay"></div>
   </div>
 </section>
 
 <!-- PROOF BAR -->
 <div class="proof-bar">
-  <div class="proof-item">
-    <span class="proof-stars">★★★★★</span>
-    200+ 5-Star Google Reviews
-  </div>
+  <div class="proof-item"><span class="proof-stars">★★★★★</span>&nbsp;200+ 5-Star Google Reviews</div>
   <div class="proof-sep"></div>
-  <div class="proof-item">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-    Licensed &amp; Insured
-  </div>
+  <div class="proof-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Licensed &amp; Insured</div>
   <div class="proof-sep"></div>
-  <div class="proof-item">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-    Same-Day Service
-  </div>
+  <div class="proof-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>Same-Day Service</div>
   <div class="proof-sep"></div>
-  <div class="proof-item">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-    Family Owned &amp; Operated
-  </div>
+  <div class="proof-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Family Owned &amp; Operated</div>
 </div>
 
 <!-- SERVICES -->
 <section class="services fade-up" id="services">
   <div class="section-label">What We Haul</div>
   <h2 class="section-title">We Take <span class="t-blue">Everything.</span></h2>
-  <p class="section-sub">From a single broken recliner to a full hoarder cleanout — text us a photo and we'll give you a no-obligation estimate on the spot.</p>
+  <p class="section-sub">From a single broken recliner to a full hoarder cleanout. Text us a photo and we'll give you a no-obligation estimate on the spot — most jobs quoted in under 20 minutes.</p>
   <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      </div>
+    <div class="service-card fade-up fade-up-delay-1">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
       <div class="service-name">Household Junk</div>
-      <div class="service-desc">Furniture, electronics, boxes, clothing piles — we clear out whatever's taking up space in your home, fast and clean.</div>
+      <div class="service-desc">Furniture, electronics, clutter, boxes — we clear out whatever's taking up space in your home, fast and clean.</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-      </div>
+    <div class="service-card fade-up fade-up-delay-2">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
       <div class="service-name">Appliance Removal</div>
-      <div class="service-desc">Fridges, washers, dryers, stoves — we haul old appliances out of your home responsibly. No need to drag it to the curb.</div>
+      <div class="service-desc">Fridges, washers, dryers, stoves — we haul old appliances out responsibly. No need to drag it to the curb first.</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-      </div>
+    <div class="service-card fade-up fade-up-delay-3">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
       <div class="service-name">Hot Tub Removal</div>
-      <div class="service-desc">We've removed hundreds of hot tubs. We handle the heavy lifting, deconstruction, and full disposal — you do nothing.</div>
+      <div class="service-desc">We've removed hundreds of hot tubs across the Valley. We handle deconstruction and full disposal — starting at $375.</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-      </div>
+    <div class="service-card fade-up">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div>
       <div class="service-name">Estate &amp; Garage Cleanouts</div>
       <div class="service-desc">Moving a loved one out or clearing decades of storage? We do full property cleanouts — quick, respectful, and thorough.</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-      </div>
+    <div class="service-card fade-up fade-up-delay-1">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
       <div class="service-name">Construction Debris</div>
-      <div class="service-desc">Renovation scraps, drywall, lumber, flooring — we clear your job site so work keeps moving without the mess slowing you down.</div>
+      <div class="service-desc">Drywall, lumber, flooring, renovation scraps — we clear your job site so work can keep moving without the mess.</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
+    <div class="service-card fade-up fade-up-delay-2">
+      <div class="service-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
       <div class="service-name">Yard Waste &amp; Debris</div>
-      <div class="service-desc">Old swing sets, brush piles, broken fencing, yard clippings — reclaim your outdoor space without a trip to the dump.</div>
+      <div class="service-desc">Old swing sets, brush piles, broken fencing, yard clippings — reclaim your outdoor space without a dump run.</div>
     </div>
   </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing fade-up" id="pricing">
+  <div class="section-label">Transparent Pricing</div>
+  <h2 class="section-title">Simple, <span style="color:var(--accent)">Upfront</span> Rates.</h2>
+  <p class="section-sub">We charge based on the volume of space your items take up in our truck — equivalent to about 6 pickup loads. All prices include labor, tax, and disposal. We give you a free on-site quote before we start anything.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="pricing-tier">Minimum Load</div>
+      <div class="pricing-price">$125</div>
+      <div class="pricing-desc">Small items, single pickups, or minimal loads</div>
+      <div class="pricing-detail">Perfect for a few items or a single appliance. Free quote on arrival — no surprises.</div>
+      <a href="tel:5093148132" class="pricing-cta">Get a Quote →</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Most Popular</div>
+      <div class="pricing-tier">Full Truck Load</div>
+      <div class="pricing-price">$545</div>
+      <div class="pricing-desc">Maximum haul — equivalent to 6 pickup truck loads</div>
+      <div class="pricing-detail">Best value for large cleanouts, full garages, or major junk removal jobs. Multiple price points in between min and max.</div>
+      <a href="tel:5093148132" class="pricing-cta">Get a Quote →</a>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-tier">Special Items</div>
+      <div class="pricing-price" style="font-size:2rem">Add-Ons</div>
+      <div class="pricing-desc">Extra charges for specialty items requiring more work</div>
+      <div class="pricing-detail" style="text-align:left">
+        Hot Tub — from $375<br>
+        Pool Table — from $275<br>
+        Piano — from $275<br>
+        Sleeper Sofa — $125<br>
+        Tires — $15–$60<br>
+        Propane Tank — $10<br>
+        Paint — $10/gal
+      </div>
+      <a href="tel:5093148132" class="pricing-cta">Get a Quote →</a>
+    </div>
+  </div>
+  <div class="surcharges-title">Everything Included: Labor &nbsp;·&nbsp; Tax &nbsp;·&nbsp; Disposal Fees &nbsp;·&nbsp; Free On-Site Quote</div>
 </section>
 
 <!-- ABOUT -->
 <section class="about fade-up" id="about">
   <div class="about-img-wrap">
-    <img
-      src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png"
-      alt="Junk Bros owners standing by their truck in Yakima, WA"
-      class="about-img"
-      loading="lazy"
-    >
-    <div class="about-badge">
-      <div class="about-badge-num">A+</div>
-      <div class="about-badge-label">Rated</div>
-    </div>
+    <img src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png" alt="Junk Bros team with their truck in Yakima, WA" class="about-img" loading="lazy">
+    <div class="about-badge"><div class="about-badge-num">A+</div><div class="about-badge-label">Rated</div></div>
   </div>
   <div class="about-content">
     <div class="section-label">Who We Are</div>
-    <h2 class="section-title">Yakima's Own Haul Crew.</h2>
-    <p class="section-sub">Family owned and locally operated since 2018, Junk Bros was built to give Yakima homeowners a fast, honest alternative to renting a dumpster. We show up, we haul it, and we leave your space clean.</p>
+    <h2 class="section-title">Yakima's Own<br><span class="t-blue">Haul Crew.</span></h2>
+    <p class="section-sub">Family owned and locally operated since 2018, Junk Bros was built to give Yakima homeowners a fast, honest alternative to renting a dumpster and doing it yourself. We show up, we haul it, and we leave your space clean.</p>
     <div class="about-stats">
-      <div class="about-stat-card">
-        <div class="about-stat-num" data-count="200">0</div>
-        <div class="about-stat-label">5-Star Reviews</div>
-      </div>
-      <div class="about-stat-card">
-        <div class="about-stat-num" data-count="6">0</div>
-        <div class="about-stat-label">Years in Business</div>
-      </div>
-      <div class="about-stat-card">
-        <div class="about-stat-num">$75</div>
-        <div class="about-stat-label">Prices Starting At</div>
-      </div>
-      <div class="about-stat-card">
-        <div class="about-stat-num">7</div>
-        <div class="about-stat-label">Days a Week</div>
-      </div>
+      <div class="about-stat-card"><div class="about-stat-num" data-count="200">0</div><div class="about-stat-label">5-Star Reviews</div></div>
+      <div class="about-stat-card"><div class="about-stat-num" data-count="6">0</div><div class="about-stat-label">Years in Business</div></div>
+      <div class="about-stat-card"><div class="about-stat-num">$125</div><div class="about-stat-label">Minimum Load Fee</div></div>
+      <div class="about-stat-card"><div class="about-stat-num">7</div><div class="about-stat-label">Days a Week</div></div>
     </div>
     <ul class="about-trust">
-      <li>
-        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Text a photo for a same-day no-obligation estimate
-      </li>
-      <li>
-        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        We do all the heavy lifting — you don't move a thing
-      </li>
-      <li>
-        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Transparent upfront pricing — no hidden fees ever
-      </li>
-      <li>
-        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        We donate and recycle whenever possible
-      </li>
+      <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Text us a photo for a same-day no-obligation estimate</li>
+      <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>We do all the heavy lifting — you don't move a thing</li>
+      <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>All prices include labor, tax, and disposal fees</li>
+      <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>We donate and recycle whenever possible — not just landfill</li>
     </ul>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials fade-up" id="reviews">
-  <div class="section-label">What Locals Say</div>
-  <h2 class="section-title">Yakima <span class="t-blue">Trusts</span> Junk Bros.</h2>
-  <div class="test-grid">
-    <div class="test-card">
-      <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"Called at 9am, they were at my house by noon. Cleared out my entire garage in under two hours. Price was fair and they swept up after. Already booked them again for my shed."</p>
-      <div class="test-name">Karen M.</div>
-      <div class="test-role">Yakima homeowner</div>
+<!-- REVIEWS -->
+<section class="reviews fade-up" id="reviews">
+  <div class="section-label">Real Customer Reviews</div>
+  <h2 class="section-title">Yakima <span style="color:var(--accent)">Trusts</span> Junk Bros.</h2>
+  <p class="section-sub">200+ five-star reviews across Google, Nextdoor, and Angi. Here's what your neighbors are saying.</p>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-source">Google Review · Victoria Michael</div>
+      <p class="review-quote">"Would absolutely recommend Junk Bros and their team — you won't be disappointed! They arrived right on time, were professional and efficient in their work and friendly to talk. Fair pricing and an overall great company to work with."</p>
+      <div class="review-name">Victoria Michael</div>
+      <div class="review-role">Google Review</div>
     </div>
-    <div class="test-card">
-      <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"Got rid of a broken hot tub that had been sitting in my backyard for three years. I texted a photo, got a quote in 20 minutes, and they hauled it out the next morning. Absolute lifesavers."</p>
-      <div class="test-name">Derek S.</div>
-      <div class="test-role">Selah, WA</div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-source">Nextdoor Review · G.H.</div>
+      <p class="review-quote">"We highly recommend Junk Bros 509. These two local brothers and their crew removed and hauled away our hot tub — they were professional, fast, and worth every penny. Will absolutely use them again."</p>
+      <div class="review-name">G.H.</div>
+      <div class="review-role">Nextdoor · Yakima, WA</div>
     </div>
-    <div class="test-card">
-      <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"Needed a full estate cleanout after my mom passed. The crew was professional, fast, and genuinely kind. They handled everything with care. I'll recommend Junk Bros to everyone I know."</p>
-      <div class="test-name">Michelle T.</div>
-      <div class="test-role">Union Gap, WA</div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-source">Google Review · Shonna Stroud</div>
+      <p class="review-quote">"Responsive, professional, on time, respectful of property, fairly priced, and does wonderful cleanup work. Highly recommend Junk Bros for any junk removal needs in the Yakima area."</p>
+      <div class="review-name">Shonna Stroud</div>
+      <div class="review-role">Google Review</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="service-areas fade-up" id="service-areas">
+  <div class="areas-intro">
+    <div>
+      <div class="section-label">Coverage</div>
+      <h2 class="section-title">Serving All of <span class="t-blue">Yakima Valley.</span></h2>
+      <p class="section-sub">We cover Yakima and 11 surrounding communities throughout the Valley. Not sure if we come to you? Give us a call — we're flexible.</p>
+      <a href="tel:5093148132" class="btn-primary" style="display:inline-flex">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Check Your Area
+      </a>
+    </div>
+    <div></div>
+  </div>
+  <div class="areas-grid">
+    <div class="area-card"><div class="area-city">Yakima</div><div class="area-state">Washington</div><span class="area-tag">Primary Area</span></div>
+    <div class="area-card"><div class="area-city">Union Gap</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Selah</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">West Valley</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Terrace Heights</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Moxee</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Wapato</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Sunnyside</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Zillah</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Grandview</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Toppenish</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+    <div class="area-card"><div class="area-city">Prosser</div><div class="area-state">Washington</div><span class="area-tag">Junk Removal</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq fade-up" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2 class="section-title">Common <span class="t-blue">Questions.</span></h2>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">How much does junk removal cost in Yakima?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">Pricing is based on the volume of space your items take in our truck. The minimum load fee is <strong>$125</strong> and a full truck load is <strong>$545</strong>, with multiple tiers in between. All prices include labor, tax, and disposal fees.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you offer same-day junk removal?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">Yes! We offer same-day service across Yakima Valley. Text us a photo of your items and we'll get you a quote fast — most responses within 20 minutes.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What items do you take?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">Almost everything — household junk, appliances, furniture, hot tubs, mattresses, yard waste, construction debris, estate cleanouts, and more. Not sure? Just text us a photo.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I get a free quote?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">Call or text <strong>(509) 314-8132</strong> with a photo of what you need hauled. We provide a free no-obligation on-site quote before any work begins — no pressure, no hidden fees.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What areas do you serve?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">We serve Yakima, Union Gap, Selah, West Valley, Terrace Heights, Moxee, Wapato, Sunnyside, Zillah, Grandview, Toppenish, and Prosser, WA.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Are prices all-inclusive?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+      <p class="faq-a">Yes. All quoted prices include labor, tax, and disposal fees. No surprise charges after the job. Special items like hot tubs, pianos, and pool tables have set surcharges listed on our pricing page.</p>
     </div>
   </div>
 </section>
 
 <!-- CTA BANNER -->
 <section class="cta-banner fade-up">
-  <div class="cta-banner-label">Service Area</div>
+  <div class="cta-banner-label">Yakima Valley's Most Trusted</div>
   <h2 class="cta-banner-title">Proudly Serving Yakima<br>and Surrounding Areas</h2>
   <a href="tel:5093148132" class="btn-dark">
     <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -1023,37 +887,31 @@
 <section class="contact fade-up" id="contact">
   <div class="contact-info">
     <div class="section-label">Get In Touch</div>
-    <h2 class="section-title">Ready to Haul?</h2>
-    <div class="contact-phone-block">
-      <div class="contact-phone-label">Call or Text</div>
-      <div class="contact-phone"><a href="tel:5093148132">(509) 314-8132</a></div>
-      <div class="contact-sub">
-        Email: <a href="mailto:junkbros509@gmail.com">junkbros509@gmail.com</a><br>
-        <span style="font-size:0.8rem;color:var(--text-muted)">Text a photo for a same-day estimate</span>
-      </div>
-    </div>
+    <h2 class="section-title">Ready to<br><span class="t-blue">Haul?</span></h2>
+    <div class="contact-phone-label">Call or Text</div>
+    <div class="contact-phone"><a href="tel:5093148132">(509) 314-8132</a></div>
+    <p class="contact-sub">Email: <a href="mailto:junkbros509@gmail.com">junkbros509@gmail.com</a><br><span style="font-size:0.8rem">Text a photo for a same-day estimate</span></p>
     <div class="hours-title">Business Hours</div>
     <ul class="hours-list">
       <li><span>Monday – Saturday</span><span>7:30 AM – 7:30 PM</span></li>
       <li><span>Sunday</span><span>9:00 AM – 5:00 PM</span></li>
     </ul>
+    <div class="social-links">
+      <a href="https://www.facebook.com/JunkBros509" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/junkbros509/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
   </div>
   <div>
     <form class="contact-form" onsubmit="handleForm(event)">
       <div class="form-row">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Jane Smith" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="(509) 555-0100" required>
-        </div>
+        <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="Jane Smith" required></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="(509) 555-0100" required></div>
       </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="jane@email.com">
-      </div>
+      <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="jane@email.com"></div>
       <div class="form-group">
         <label for="service">What needs to go?</label>
         <select id="service">
@@ -1061,16 +919,14 @@
           <option>Household Junk / Clutter</option>
           <option>Appliance Removal</option>
           <option>Hot Tub Removal</option>
+          <option>Pool Table Removal</option>
           <option>Estate / Garage Cleanout</option>
           <option>Construction Debris</option>
           <option>Yard Waste</option>
           <option>Other / Multiple Items</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="message">Tell us more (optional)</label>
-        <textarea id="message" placeholder="Describe what you need hauled, rough size/volume, any access issues..."></textarea>
-      </div>
+      <div class="form-group"><label for="message">Tell us more (optional)</label><textarea id="message" placeholder="Describe what you need hauled, rough size/volume, any access issues..."></textarea></div>
       <button type="submit" class="form-submit">Send My Free Quote Request →</button>
     </form>
   </div>
@@ -1078,16 +934,55 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="footer-logo">
-    <div class="footer-links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-      <a href="tel:5093148132">(509) 314-8132</a>
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="footer-logo">
+      <p class="footer-tagline">Locally owned junk removal serving Yakima, WA and surrounding communities since 2018.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/JunkBros509" class="footer-social" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/junkbros509/" class="footer-social" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
     </div>
-    <div class="footer-copy">© 2024 Junk Bros · Yakima, WA</div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <div class="footer-links">
+        <a href="#services">Household Junk Removal</a>
+        <a href="#services">Appliance Removal</a>
+        <a href="#services">Hot Tub Removal</a>
+        <a href="#services">Estate Cleanouts</a>
+        <a href="#services">Construction Debris</a>
+        <a href="#services">Yard Waste Removal</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Service Areas</div>
+      <div class="footer-links">
+        <a href="#service-areas">Yakima, WA</a>
+        <a href="#service-areas">Selah, WA</a>
+        <a href="#service-areas">Union Gap, WA</a>
+        <a href="#service-areas">Sunnyside, WA</a>
+        <a href="#service-areas">Grandview, WA</a>
+        <a href="#service-areas">Prosser, WA</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-links">
+        <a href="tel:5093148132">(509) 314-8132</a>
+        <a href="mailto:junkbros509@gmail.com">junkbros509@gmail.com</a>
+        <a href="#contact">Free Quote Form</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Junk Bros 509 · 507 5th St, Zillah, WA · (509) 314-8132 · All rights reserved</div>
+    <div class="footer-credit">Junk Removal in Yakima, Union Gap, Selah, Sunnyside &amp; Yakima Valley, WA</div>
   </div>
 </footer>
 
@@ -1101,44 +996,38 @@
     overlay.classList.toggle('open');
     document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
   });
-  function closeMenu() {
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-  }
+  function closeMenu() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   function animateCount(el, target, duration = 1800) {
     const start = performance.now();
     const update = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const ease = 1 - Math.pow(1 - progress, 3);
-      const val = Math.round(ease * target);
-      el.textContent = val + (target >= 100 ? '+' : target === 6 ? '+' : '');
-      if (progress < 1) requestAnimationFrame(update);
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(ease * target) + (target >= 100 ? '+' : '+');
+      if (p < 1) requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
   }
-
-  const countObserver = new IntersectionObserver((entries) => {
+  const countObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.querySelectorAll('[data-count]').forEach(el => animateCount(el, parseInt(el.dataset.count)));
-        countObserver.unobserve(e.target);
+        countObs.unobserve(e.target);
       }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.about-stats').forEach(el => countObserver.observe(el));
+  document.querySelectorAll('.about-stats').forEach(el => countObs.observe(el));
 
   function handleForm(e) {
     e.preventDefault();
     const btn = e.target.querySelector('.form-submit');
     btn.textContent = '✓ Sent! We\'ll be in touch shortly.';
-    btn.style.background = '#16a34a';
-    btn.disabled = true;
+    btn.style.background = '#16a34a'; btn.disabled = true;
   }
 </script>
 </body>
