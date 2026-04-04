@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" width="260" height="88">
+  <defs>
+    <!-- Clip the B so the J sits cleanly on top with a diagonal cut feel -->
+    <clipPath id="bClip">
+      <polygon points="120,0 260,0 260,72 120,72"/>
+    </clipPath>
+  </defs>
+
+  <!-- B in gray, clipped so it starts where J ends -->
+  <text x="115" y="66"
+    font-family="'Arial Black','Arial',sans-serif"
+    font-weight="900" font-size="70" fill="#686868"
+    clip-path="url(#bClip)">B</text>
+
+  <!-- J in navy blue, in front -->
+  <text x="62" y="66"
+    font-family="'Arial Black','Arial',sans-serif"
+    font-weight="900" font-size="70" fill="#2B3480">J</text>
+
+  <!-- Junk - Bros wordmark -->
+  <text x="130" y="85"
+    font-family="'Arial Black','Arial',sans-serif"
+    font-weight="900" font-size="18" fill="#111111"
+    text-anchor="middle" letter-spacing="2">Junk - Bros</text>
+</svg>
