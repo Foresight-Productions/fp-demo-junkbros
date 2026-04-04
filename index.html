@@ -2,61 +2,62 @@
 <html lang="en">
 <head>
 <!-- Design System
-  Style: Bauhaus / Bold Poster
-  Archetype: Bold Poster
+  Style: Bold Poster / Editorial Split
+  Archetype: Bold Poster (left text panel + right client photo)
   Fonts: Outfit (Black 900) / Inter
-  Palette: primary #F97316 | accent #0A0A0A | bg #FAFAFA | text #1B1B1B
-  Anti-patterns avoided: no dark image overlay hero, no rounded card grid, no generic 3-col services,
-    no hard shadows on typography, no soft/pastel palette for a hauling company
+  Palette: primary #1A2DF3 (brand blue) | accent #FF4040 (brand coral) | dark #0D1147 (navy) | bg #F8F9FF | text #1A1A2E
+  Client colors sourced directly from junkbros509.com via Chrome
+  Logo: Wix CDN — real client logo
+  Photo: Wix CDN — real owners + truck
+  Anti-patterns avoided: no orange, no generic dark image overlay, no fake brand colors
 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Junk Bros 509 | Yakima's #1 Junk Removal & Hauling</title>
-<meta name="description" content="Junk Bros 509 is Yakima's top-rated junk removal service. We haul appliances, furniture, hot tubs, estate cleanouts, and construction debris — same-day available. Call (509) 314-8132.">
+<title>Junk Bros | Yakima's #1 Junk Removal & Hauling</title>
+<meta name="description" content="Junk Bros is Yakima's top-rated junk removal service. We haul appliances, furniture, hot tubs, estate cleanouts, and construction debris — same-day available. Call (509) 314-8132.">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://foresight-productions.github.io/fp-demo-junkbros/">
-<meta property="og:title" content="Junk Bros 509 | Yakima's #1 Junk Removal · Yakima, WA">
+<meta property="og:title" content="Junk Bros | Yakima's #1 Junk Removal · Yakima, WA">
 <meta property="og:description" content="Locally owned junk removal in Yakima, WA. Hot tubs, appliances, furniture, estate cleanouts — we haul it all. Same-day pickup available.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format">
+<meta property="og:image" content="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_avif,quality_auto/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Junk removal truck ready for pickup in Yakima, WA">
-<meta property="og:site_name" content="Junk Bros 509">
+<meta property="og:image:alt" content="Junk Bros owners with their blue dump trailer in Yakima, WA">
+<meta property="og:site_name" content="Junk Bros">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Junk Bros 509 | Yakima's #1 Junk Removal · Yakima, WA">
+<meta name="twitter:title" content="Junk Bros | Yakima's #1 Junk Removal · Yakima, WA">
 <meta name="twitter:description" content="Locally owned junk removal in Yakima, WA. Hot tubs, appliances, furniture, estate cleanouts — we haul it all. Same-day pickup available.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_avif,quality_auto/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    --primary: #F97316;
-    --primary-dark: #EA580C;
-    --accent: #0A0A0A;
-    --text: #1B1B1B;
-    --text-muted: #6B6B6B;
-    --bg: #FAFAFA;
-    --bg-subtle: #F0F0F0;
+    --primary: #1A2DF3;
+    --primary-dark: #1122CC;
+    --primary-light: #4055F5;
+    --accent: #FF4040;
+    --accent-dark: #E03030;
+    --dark: #0D1147;
+    --dark-mid: #1A2060;
+    --text: #1A1A2E;
+    --text-muted: #6B7080;
+    --bg: #F8F9FF;
+    --bg-subtle: #EEF0FB;
     --surface: #FFFFFF;
-    --border: 3px solid #1B1B1B;
-    --shadow-hard: 5px 5px 0px #1B1B1B;
-    --shadow-hard-orange: 5px 5px 0px var(--primary);
     --font-head: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: var(--font-body);
     background: var(--bg);
@@ -65,7 +66,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ============ NAV ============ */
+  /* ── NAV ── */
   #nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -74,55 +75,51 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-    height: 68px;
-    background: var(--accent);
-    border-bottom: 3px solid var(--accent);
-    transition: background 200ms ease, box-shadow 200ms ease;
+    height: 70px;
+    background: rgba(13, 17, 71, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgba(26, 45, 243, 0.4);
+    transition: box-shadow 200ms ease;
   }
-  #nav.scrolled {
-    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  #nav.scrolled { box-shadow: 0 4px 30px rgba(13,17,71,0.5); }
+
+  .nav-logo-img {
+    max-height: 42px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
   }
-  .nav-logo {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 1.25rem;
-    letter-spacing: -0.5px;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    flex-shrink: 0;
-  }
-  .nav-logo span { color: var(--primary); }
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2.25rem;
     flex-shrink: 0;
   }
   .nav-links a {
     font-family: var(--font-body);
     font-size: 0.875rem;
     font-weight: 500;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.75);
     text-decoration: none;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    letter-spacing: 0.4px;
     transition: color 150ms ease;
     cursor: pointer;
   }
-  .nav-links a:hover { color: var(--primary); }
+  .nav-links a:hover { color: #FFFFFF; }
   .nav-cta {
     background: var(--primary) !important;
     color: #FFFFFF !important;
     padding: 0.5rem 1.25rem !important;
-    border: 2px solid var(--primary) !important;
+    border-radius: 50px !important;
     font-weight: 700 !important;
-    letter-spacing: 0.5px !important;
+    font-size: 0.875rem !important;
+    letter-spacing: 0.3px !important;
     transition: background 150ms ease, transform 150ms ease !important;
+    white-space: nowrap;
   }
   .nav-cta:hover {
-    background: var(--primary-dark) !important;
-    border-color: var(--primary-dark) !important;
+    background: var(--primary-light) !important;
     transform: translateY(-1px);
   }
   .nav-toggle {
@@ -135,133 +132,107 @@
     border: none;
     flex-shrink: 0;
   }
-  .nav-toggle span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: #FFFFFF;
-    transition: all 200ms ease;
-  }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; transition: all 200ms ease; }
 
-  /* Mobile overlay */
   .nav-overlay {
-    position: fixed;
-    inset: 0;
-    background: var(--accent);
+    position: fixed; inset: 0;
+    background: var(--dark);
     z-index: 999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    opacity: 0;
-    pointer-events: none;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem;
+    opacity: 0; pointer-events: none;
     transition: opacity 200ms ease;
   }
   .nav-overlay.open { opacity: 1; pointer-events: all; }
   .nav-overlay a {
     font-family: var(--font-head);
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+    font-size: 2.25rem; font-weight: 900;
+    color: #fff; text-decoration: none; text-transform: uppercase; letter-spacing: -1px;
     transition: color 150ms ease;
   }
   .nav-overlay a:hover { color: var(--primary); }
   .nav-overlay .overlay-cta {
     background: var(--primary);
-    color: #FFFFFF;
-    padding: 1rem 2.5rem;
-    font-size: 1.25rem;
-    border: 3px solid var(--primary);
-    margin-top: 1rem;
+    color: #fff; padding: 1rem 2.5rem;
+    font-size: 1.1rem; border-radius: 50px; margin-top: 0.5rem;
   }
 
-  /* ============ HERO — BOLD POSTER ============ */
+  /* ── HERO — EDITORIAL SPLIT ── */
   .hero {
     min-height: 100vh;
     min-height: 100svh;
-    background: var(--accent);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 70px;
+  }
+  .hero-left {
+    background: var(--dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 5% 60px;
+    padding: 4rem 5% 4rem 7%;
     position: relative;
     overflow: hidden;
   }
-
-  /* Geometric background accent */
-  .hero::before {
+  .hero-left::before {
     content: '';
     position: absolute;
-    top: -80px;
-    right: -80px;
-    width: 420px;
-    height: 420px;
+    bottom: -80px; left: -80px;
+    width: 300px; height: 300px;
     background: var(--primary);
     opacity: 0.08;
-    transform: rotate(15deg);
+    border-radius: 50%;
   }
-  .hero::after {
+  .hero-left::after {
     content: '';
     position: absolute;
-    bottom: 80px;
-    left: -60px;
-    width: 280px;
-    height: 280px;
-    background: var(--primary);
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: var(--accent);
     opacity: 0.06;
-    transform: rotate(-10deg);
+    border-radius: 50%;
   }
 
   .hero-eyebrow {
-    font-family: var(--font-head);
-    font-size: 0.875rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--primary);
-    margin-bottom: 1.5rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
+    background: rgba(26,45,243,0.2);
+    border: 1px solid rgba(26,45,243,0.4);
+    border-radius: 50px;
+    padding: 0.35rem 1rem;
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1.75rem;
+    width: fit-content;
   }
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: var(--primary);
-    flex-shrink: 0;
-  }
+  .eyebrow-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
 
   .hero-headline {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: clamp(3.5rem, 9vw, 8.5rem);
-    line-height: 0.95;
-    letter-spacing: -3px;
+    font-size: clamp(2.75rem, 4.5vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -2px;
     color: #FFFFFF;
     text-transform: uppercase;
-    max-width: 900px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative; z-index: 1;
   }
-  .hero-headline .hl-orange { color: var(--primary); }
-  .hero-headline .hl-stroke {
-    -webkit-text-stroke: 3px #FFFFFF;
-    color: transparent;
-  }
+  .hero-headline .hl-blue { color: var(--primary); }
+  .hero-headline .hl-red { color: var(--accent); }
 
   .hero-sub {
-    font-family: var(--font-body);
-    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
     font-weight: 400;
-    color: rgba(255,255,255,0.65);
-    max-width: 540px;
-    line-height: 1.7;
-    margin-bottom: 2.5rem;
+    color: rgba(255,255,255,0.6);
+    max-width: 420px;
+    line-height: 1.75;
+    margin-bottom: 2.25rem;
+    position: relative; z-index: 1;
   }
 
   .hero-btns {
@@ -269,110 +240,95 @@
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    position: relative; z-index: 1;
+    margin-bottom: 2.5rem;
   }
 
   .btn-primary {
     font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
     background: var(--primary);
-    color: #FFFFFF;
-    border: 3px solid var(--primary);
-    padding: 0.875rem 2rem;
+    color: #fff;
+    border: 2px solid var(--primary);
+    padding: 0.875rem 1.75rem;
+    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: background 150ms ease, box-shadow 150ms ease, transform 150ms ease;
-    box-shadow: var(--shadow-hard);
+    transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+    box-shadow: 0 4px 20px rgba(26,45,243,0.4);
   }
   .btn-primary:hover {
-    background: var(--primary-dark);
-    border-color: var(--primary-dark);
-    box-shadow: 3px 3px 0px #1B1B1B;
-    transform: translate(2px, 2px);
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,45,243,0.5);
   }
 
   .btn-outline {
     font-family: var(--font-head);
     font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    font-size: 0.95rem;
     background: transparent;
-    color: #FFFFFF;
-    border: 3px solid #FFFFFF;
-    padding: 0.875rem 2rem;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.35);
+    padding: 0.875rem 1.75rem;
+    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: background 150ms ease, color 150ms ease;
+    transition: border-color 150ms ease, background 150ms ease;
   }
-  .btn-outline:hover {
-    background: #FFFFFF;
-    color: var(--accent);
-  }
+  .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
 
-  .hero-stats-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0; right: 0;
-    background: var(--primary);
+  .hero-badges {
     display: flex;
-    align-items: center;
-    gap: 0;
-    overflow: hidden;
-  }
-  .hero-stat {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    border-right: 3px solid var(--primary-dark);
-    text-align: center;
-  }
-  .hero-stat:last-child { border-right: none; }
-  .hero-stat-num {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 1.75rem;
-    color: #FFFFFF;
-    line-height: 1;
-  }
-  .hero-stat-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
-    margin-top: 0.2rem;
-  }
-
-  /* Hero geometric SVG divider replaced by stats bar */
-
-  /* ============ PROOF BAR ============ */
-  .proof-bar {
-    background: var(--bg-subtle);
-    border-top: 3px solid var(--accent);
-    border-bottom: 3px solid var(--accent);
-    padding: 1.5rem 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    overflow: hidden;
+    position: relative; z-index: 1;
+  }
+  .hero-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.55);
+    font-weight: 500;
+  }
+  .hero-badge svg { width: 16px; height: 16px; color: var(--primary); flex-shrink: 0; }
+
+  .hero-right {
     position: relative;
+    overflow: hidden;
   }
-  .proof-inner {
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .hero-photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--dark) 0%, transparent 30%);
+  }
+
+  /* ── PROOF BAR ── */
+  .proof-bar {
+    background: var(--primary);
+    padding: 1.1rem 5%;
     display: flex;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
   .proof-item {
     display: flex;
@@ -380,457 +336,329 @@
     gap: 0.6rem;
     font-family: var(--font-head);
     font-weight: 700;
-    font-size: 0.9rem;
-    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: #fff;
     text-transform: uppercase;
-    color: var(--text);
+    white-space: nowrap;
   }
-  .proof-stars { color: #F59E0B; font-size: 1.1rem; letter-spacing: 2px; }
-  .proof-sep {
-    width: 3px;
-    height: 28px;
-    background: var(--accent);
-    opacity: 0.2;
-    flex-shrink: 0;
-  }
+  .proof-stars { letter-spacing: 2px; }
+  .proof-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.3); flex-shrink: 0; }
 
-  /* ============ SERVICES ============ */
-  .services {
-    padding: 7rem 5%;
-    background: var(--bg);
-  }
+  /* ── SERVICES ── */
+  .services { padding: 6rem 7%; background: var(--bg); }
+
   .section-label {
     font-family: var(--font-head);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--primary);
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  .section-label::before {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 3px;
-    background: var(--primary);
-    flex-shrink: 0;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
   }
   .section-title {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1;
-    letter-spacing: -2px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
     text-transform: uppercase;
     color: var(--text);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
+  .section-title .t-blue { color: var(--primary); }
   .section-sub {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-muted);
     max-width: 520px;
     line-height: 1.7;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
   }
 
   .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    border: var(--border);
+    gap: 1.25rem;
   }
   .service-card {
-    padding: 2.25rem 2rem;
-    border-right: var(--border);
-    border-bottom: var(--border);
-    position: relative;
     background: var(--surface);
-    transition: background 200ms ease, box-shadow 200ms ease, transform 200ms ease;
-    cursor: default;
+    border: 1.5px solid #E2E6F8;
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    position: relative;
+    transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+    overflow: hidden;
   }
-  .service-card:nth-child(3n) { border-right: none; }
-  .service-card:nth-last-child(-n+3) { border-bottom: none; }
-  .service-card:hover {
-    background: var(--accent);
-    z-index: 1;
-    transform: scale(1.02);
-    box-shadow: var(--shadow-hard-orange);
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease;
   }
-  .service-card:hover .service-name,
-  .service-card:hover .service-desc { color: #FFFFFF; }
-  .service-card:hover .service-icon-wrap { background: var(--primary); border-color: var(--primary); }
-  .service-card:hover .service-icon-wrap svg { color: #FFFFFF; }
-
-  .service-num {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--text-muted);
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-    transition: color 200ms ease;
-  }
-  .service-card:hover .service-num { color: rgba(255,255,255,0.4); }
+  .service-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,45,243,0.12); }
+  .service-card:hover::before { transform: scaleX(1); }
 
   .service-icon-wrap {
-    width: 52px;
-    height: 52px;
+    width: 48px; height: 48px;
     background: var(--bg-subtle);
-    border: 2px solid var(--bg-subtle);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.25rem;
-    transition: background 200ms ease, border-color 200ms ease;
+    transition: background 200ms ease;
   }
-  .service-icon-wrap svg {
-    width: 26px;
-    height: 26px;
-    color: var(--primary);
-    transition: color 200ms ease;
-  }
+  .service-card:hover .service-icon-wrap { background: rgba(26,45,243,0.1); }
+  .service-icon-wrap svg { width: 24px; height: 24px; color: var(--primary); }
 
   .service-name {
     font-family: var(--font-head);
     font-weight: 800;
-    font-size: 1.15rem;
-    letter-spacing: -0.5px;
+    font-size: 1rem;
+    letter-spacing: -0.3px;
     text-transform: uppercase;
     color: var(--text);
-    margin-bottom: 0.6rem;
-    transition: color 200ms ease;
+    margin-bottom: 0.5rem;
   }
   .service-desc {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.65;
     color: var(--text-muted);
-    transition: color 200ms ease;
   }
 
-  /* ============ ABOUT ============ */
+  /* ── ABOUT ── */
   .about {
-    padding: 7rem 5%;
-    background: var(--accent);
+    padding: 6rem 7%;
+    background: var(--dark);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
   }
-  .about-img-wrap {
-    position: relative;
-  }
+
+  .about-img-wrap { position: relative; }
   .about-img {
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
     display: block;
-    border: 3px solid var(--primary);
-    box-shadow: 8px 8px 0px var(--primary);
+    border-radius: 16px;
+    border: 3px solid rgba(26,45,243,0.5);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
   }
   .about-badge {
     position: absolute;
-    bottom: -20px;
-    right: -20px;
+    bottom: -16px; right: -16px;
     background: var(--primary);
-    border: 3px solid var(--accent);
-    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
     text-align: center;
-    box-shadow: var(--shadow-hard);
+    box-shadow: 0 8px 24px rgba(26,45,243,0.5);
+    border: 3px solid var(--dark);
   }
   .about-badge-num {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: 2.25rem;
-    color: #FFFFFF;
+    font-size: 2rem;
+    color: #fff;
     line-height: 1;
   }
   .about-badge-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.85);
-    margin-top: 0.25rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0.2rem;
   }
 
-  .about-content .section-label::before { background: var(--primary); }
-  .about-content .section-title { color: #FFFFFF; }
-  .about-content .section-sub { color: rgba(255,255,255,0.6); margin-bottom: 2.5rem; }
+  .about-content .section-title { color: #fff; }
+  .about-content .section-sub { color: rgba(255,255,255,0.55); margin-bottom: 2rem; }
 
   .about-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin-bottom: 2.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
   .about-stat-card {
     background: rgba(255,255,255,0.06);
-    border: 2px solid rgba(255,255,255,0.1);
-    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
   }
   .about-stat-num {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: var(--primary);
     line-height: 1;
   }
   .about-stat-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    color: rgba(255,255,255,0.55);
-    margin-top: 0.3rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.25rem;
     letter-spacing: 0.3px;
   }
 
-  .about-trust {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-  }
+  .about-trust { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
   .about-trust li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.8);
-    line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 0.65rem;
+    font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.5;
   }
-  .about-trust li svg {
-    width: 20px;
-    height: 20px;
-    color: var(--primary);
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
+  .about-trust li svg { width: 18px; height: 18px; color: var(--primary); flex-shrink: 0; margin-top: 1px; }
 
-  /* ============ TESTIMONIALS ============ */
-  .testimonials {
-    padding: 7rem 5%;
-    background: var(--bg-subtle);
-    border-top: var(--border);
-    border-bottom: var(--border);
-  }
-  .testimonials .section-title,
-  .testimonials .section-label { }
+  /* ── TESTIMONIALS ── */
+  .testimonials { padding: 6rem 7%; background: var(--bg-subtle); }
 
   .test-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    border: var(--border);
+    gap: 1.25rem;
     margin-top: 3rem;
   }
   .test-card {
-    padding: 2.5rem 2rem;
     background: var(--surface);
-    border-right: var(--border);
-    position: relative;
-    transition: background 200ms ease, transform 200ms ease;
+    border: 1.5px solid #E2E6F8;
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
   }
-  .test-card:last-child { border-right: none; }
   .test-card:hover {
-    background: var(--primary);
+    border-color: var(--primary);
     transform: translateY(-4px);
-    z-index: 1;
-    box-shadow: 0 8px 0px var(--accent);
+    box-shadow: 0 12px 40px rgba(26,45,243,0.12);
   }
-  .test-card:hover .test-quote,
-  .test-card:hover .test-name,
-  .test-card:hover .test-role { color: #FFFFFF; }
-  .test-card:hover .test-stars { color: rgba(255,255,255,0.9); }
+  .test-stars { color: #F59E0B; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 1rem; }
+  .test-quote { font-size: 0.9rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.25rem; font-style: italic; }
+  .test-name { font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text); }
+  .test-role { font-size: 0.775rem; color: var(--text-muted); margin-top: 0.2rem; }
 
-  .test-stars {
-    color: #F59E0B;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin-bottom: 1.25rem;
-    transition: color 200ms ease;
-  }
-  .test-quote {
-    font-size: 0.975rem;
-    line-height: 1.7;
-    color: var(--text);
-    margin-bottom: 1.5rem;
-    font-style: italic;
-    transition: color 200ms ease;
-  }
-  .test-name {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--text);
-    transition: color 200ms ease;
-  }
-  .test-role {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 0.2rem;
-    transition: color 200ms ease;
-  }
-
-  /* ============ SERVICE AREA CTA ============ */
+  /* ── CTA BANNER ── */
   .cta-banner {
     background: var(--primary);
-    padding: 5rem 5%;
-    border-top: var(--border);
-    border-bottom: var(--border);
+    padding: 5rem 7%;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
   .cta-banner::before {
-    content: '';
+    content: '509';
     position: absolute;
-    top: -60px; left: -60px;
-    width: 240px; height: 240px;
-    background: rgba(0,0,0,0.08);
-    transform: rotate(20deg);
-  }
-  .cta-banner::after {
-    content: '';
-    position: absolute;
-    bottom: -80px; right: -40px;
-    width: 320px; height: 320px;
-    background: rgba(0,0,0,0.06);
-    transform: rotate(-15deg);
+    font-family: var(--font-head);
+    font-weight: 900;
+    font-size: 20rem;
+    color: rgba(255,255,255,0.04);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -10px;
+    pointer-events: none;
+    white-space: nowrap;
   }
   .cta-banner-label {
     font-family: var(--font-head);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
-    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 0.75rem;
     position: relative; z-index: 1;
   }
   .cta-banner-title {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.05;
-    letter-spacing: -1.5px;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -1px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 2rem;
+    color: #fff;
+    margin-bottom: 1.75rem;
     position: relative; z-index: 1;
   }
-  .cta-banner .btn-cta {
+  .btn-dark {
     font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    background: var(--accent);
-    color: #FFFFFF;
-    border: 3px solid var(--accent);
-    padding: 1rem 2.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    background: var(--dark);
+    color: #fff;
+    border: 2px solid var(--dark);
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 5px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     transition: transform 150ms ease, box-shadow 150ms ease;
     position: relative; z-index: 1;
   }
-  .cta-banner .btn-cta:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 3px 3px 0px rgba(0,0,0,0.25);
-  }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.4); }
 
-  /* ============ CONTACT ============ */
+  /* ── CONTACT ── */
   .contact {
-    padding: 7rem 5%;
+    padding: 6rem 7%;
     background: var(--bg);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: start;
   }
-  .contact-info .section-title { font-size: clamp(2rem, 3.5vw, 2.75rem); }
-  .contact-phone {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin: 2rem 0 1rem;
+  .contact-info .section-title { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+  .contact-phone-block { margin: 1.75rem 0 1.5rem; }
+  .contact-phone-label {
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
   }
   .contact-phone a {
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-size: clamp(1.75rem, 3vw, 2.75rem);
     color: var(--primary);
     text-decoration: none;
     letter-spacing: -1px;
+    display: block;
     transition: color 150ms ease;
   }
-  .contact-phone a:hover { color: var(--primary-dark); }
-  .contact-email {
-    font-size: 1rem;
-    color: var(--text-muted);
-    margin-bottom: 2.5rem;
-  }
-  .contact-email a {
-    color: var(--text);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color 150ms ease;
-  }
-  .contact-email a:hover { color: var(--primary); }
+  .contact-phone a:hover { color: var(--primary-light); }
+  .contact-sub { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.25rem; }
+  .contact-sub a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+  .contact-sub a:hover { color: var(--primary); }
 
   .hours-title {
     font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 0.85rem;
+    font-weight: 700;
+    font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--text);
-    margin-bottom: 1rem;
+    margin: 1.75rem 0 0.75rem;
   }
-  .hours-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+  .hours-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
   .hours-list li {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    padding-bottom: 0.5rem;
+    display: flex; justify-content: space-between;
+    font-size: 0.875rem; color: var(--text-muted);
+    padding: 0.5rem 0;
     border-bottom: 1px solid var(--bg-subtle);
   }
   .hours-list li span:first-child { font-weight: 500; color: var(--text); }
 
-  /* Form */
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
   .form-group label {
     font-family: var(--font-head);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -843,140 +671,107 @@
     font-size: 0.95rem;
     color: var(--text);
     background: var(--surface);
-    border: 2px solid var(--accent);
+    border: 1.5px solid #D0D5EB;
+    border-radius: 8px;
     padding: 0.75rem 1rem;
     outline: none;
-    border-radius: 0;
     width: 100%;
-    transition: border-color 150ms ease;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
     -webkit-appearance: none;
   }
   .form-group input:focus,
   .form-group textarea:focus,
   .form-group select:focus {
     border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(26,45,243,0.1);
   }
-  .form-group textarea { resize: vertical; min-height: 120px; }
-
+  .form-group textarea { resize: vertical; min-height: 110px; }
   .form-submit {
     font-family: var(--font-head);
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 0.3px;
     background: var(--primary);
-    color: #FFFFFF;
-    border: 3px solid var(--primary);
+    color: #fff;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
     padding: 0.875rem 2rem;
     cursor: pointer;
     width: 100%;
-    box-shadow: var(--shadow-hard);
-    transition: background 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+    box-shadow: 0 4px 20px rgba(26,45,243,0.35);
+    transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease;
   }
   .form-submit:hover {
-    background: var(--primary-dark);
-    box-shadow: 3px 3px 0px #1B1B1B;
-    transform: translate(2px, 2px);
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,45,243,0.45);
   }
 
-  /* ============ FOOTER ============ */
+  /* ── FOOTER ── */
   footer {
-    background: var(--accent);
-    border-top: 3px solid var(--primary);
-    padding: 3rem 5%;
+    background: var(--dark);
+    border-top: 2px solid rgba(26,45,243,0.3);
+    padding: 2.5rem 7%;
   }
   .footer-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
-  .footer-brand {
-    font-family: var(--font-head);
-    font-weight: 900;
-    font-size: 1.1rem;
-    letter-spacing: -0.5px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-  }
-  .footer-brand span { color: var(--primary); }
-  .footer-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
+  .footer-logo { max-height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.9; }
+  .footer-links { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
   .footer-links a {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.55);
-    text-decoration: none;
-    transition: color 150ms ease;
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.4px;
+    color: rgba(255,255,255,0.45); text-decoration: none; transition: color 150ms ease;
   }
-  .footer-links a:hover { color: var(--primary); }
-  .footer-copy {
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.35);
-  }
+  .footer-links a:hover { color: #fff; }
+  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
 
-  /* ============ ANIMATIONS ============ */
-  .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 600ms ease, transform 600ms ease;
-  }
-  .fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
+  /* ── ANIMATIONS ── */
+  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 550ms ease, transform 550ms ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
   @media (prefers-reduced-motion: reduce) {
     .fade-up { opacity: 1; transform: none; transition: none; }
     * { transition: none !important; animation: none !important; }
   }
 
-  /* ============ MOBILE ============ */
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 4rem 7%; min-height: calc(100vh - 70px); }
+    .about { grid-template-columns: 1fr; gap: 3rem; }
+  }
   @media (max-width: 900px) {
     .services-grid { grid-template-columns: repeat(2, 1fr); }
-    .service-card:nth-child(3n) { border-right: var(--border); }
-    .service-card:nth-last-child(-n+3) { border-bottom: var(--border); }
-    .service-card:nth-child(2n) { border-right: none; }
-    .service-card:nth-last-child(-n+2) { border-bottom: none; }
-    .about { grid-template-columns: 1fr; gap: 3rem; }
     .test-grid { grid-template-columns: 1fr; }
-    .test-card { border-right: none; border-bottom: var(--border); }
-    .test-card:last-child { border-bottom: none; }
     .contact { grid-template-columns: 1fr; gap: 3rem; }
   }
-
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav-toggle { display: flex; }
-    .hero { padding: 88px 1.2rem 4rem; }
+    .hero-left { padding: 3rem 1.5rem; }
     .hero-btns { flex-direction: column; align-items: flex-start; }
     .hero-btns .btn-primary,
     .hero-btns .btn-outline { width: 100%; max-width: 320px; justify-content: center; }
-    .hero-stats-bar { position: relative; margin-top: 3rem; }
-    .hero-stat { padding: 0.75rem 0.75rem; }
-    .hero-stat-num { font-size: 1.35rem; }
     .proof-sep { display: none; }
+    .proof-bar { gap: 1rem; padding: 1rem 5%; }
+    .proof-item { font-size: 0.75rem; }
+    .services { padding: 4rem 5%; }
+    .about { padding: 4rem 5%; }
+    .testimonials { padding: 4rem 5%; }
+    .contact { padding: 4rem 5%; }
+    .cta-banner { padding: 3.5rem 5%; }
     .about-badge { bottom: 0; right: 0.5rem; }
     .about-img-wrap { padding-bottom: 2rem; }
     .form-row { grid-template-columns: 1fr; }
     .footer-inner { flex-direction: column; text-align: center; }
     .footer-links { justify-content: center; }
-    .cta-banner { padding: 3.5rem 1.2rem; }
   }
-
   @media (max-width: 480px) {
     .services-grid { grid-template-columns: 1fr; }
-    .service-card:nth-child(2n) { border-right: none; }
-    .service-card:nth-last-child(-n+2) { border-bottom: var(--border); }
-    .service-card { border-right: none; border-bottom: var(--border); }
-    .service-card:last-child { border-bottom: none; }
     .about-stats { grid-template-columns: 1fr; }
   }
 </style>
@@ -985,7 +780,9 @@
 
 <!-- NAV -->
 <header id="nav">
-  <a class="nav-logo" href="#"><span>Junk</span> Bros 509</a>
+  <a href="#">
+    <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="nav-logo-img">
+  </a>
   <nav class="nav-links">
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -1007,142 +804,124 @@
   <a href="tel:5093148132" class="overlay-cta" onclick="closeMenu()">(509) 314-8132</a>
 </div>
 
-<!-- HERO — BOLD POSTER -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">Yakima, WA · Est. 2018</div>
-  <h1 class="hero-headline">
-    We Haul<br>
-    <span class="hl-orange">It All.</span><br>
-    <span class="hl-stroke">Today.</span>
-  </h1>
-  <p class="hero-sub">No job too big. No mess too ugly. Junk Bros 509 is Yakima's most trusted junk removal crew — same-day pickup, upfront pricing, and zero hassle.</p>
-  <div class="hero-btns">
-    <a href="#contact" class="btn-primary">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-      Get a Free Quote
-    </a>
-    <a href="tel:5093148132" class="btn-outline">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-      (509) 314-8132
-    </a>
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Yakima, WA &nbsp;·&nbsp; Est. 2018
+    </div>
+    <h1 class="hero-headline">
+      Yakima's<br>
+      <span class="hl-blue">Junk Removal</span><br>
+      Experts.
+    </h1>
+    <p class="hero-sub">Locally owned and family operated. We haul appliances, furniture, hot tubs, construction debris, and full estate cleanouts — same-day service available. Text us a photo for a free quote.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        Get a Free Quote
+      </a>
+      <a href="tel:5093148132" class="btn-outline">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        (509) 314-8132
+      </a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Licensed &amp; Insured
+      </div>
+      <div class="hero-badge">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Same-Day Available
+      </div>
+      <div class="hero-badge">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        200+ 5-Star Reviews
+      </div>
+    </div>
   </div>
-  <div class="hero-stats-bar">
-    <div class="hero-stat">
-      <div class="hero-stat-num" data-count="200">0</div>
-      <div class="hero-stat-label">5-Star Reviews</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" data-count="6">0</div>
-      <div class="hero-stat-label" style="white-space:nowrap">+ Years Hauling</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">$75</div>
-      <div class="hero-stat-label">Starting Price</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">24/7</div>
-      <div class="hero-stat-label">Text for Quote</div>
-    </div>
+  <div class="hero-right">
+    <img
+      src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png"
+      alt="Junk Bros owners with their blue dump trailer in Yakima, WA"
+      class="hero-photo"
+    >
+    <div class="hero-photo-overlay"></div>
   </div>
 </section>
 
 <!-- PROOF BAR -->
 <div class="proof-bar">
-  <div class="proof-inner">
-    <div class="proof-item">
-      <span class="proof-stars">★★★★★</span>
-      <span>200+ 5-Star Google Reviews</span>
-    </div>
-    <div class="proof-sep"></div>
-    <div class="proof-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      Licensed & Insured
-    </div>
-    <div class="proof-sep"></div>
-    <div class="proof-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-      Same-Day Service Available
-    </div>
-    <div class="proof-sep"></div>
-    <div class="proof-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-      Locally Owned & Family Operated
-    </div>
+  <div class="proof-item">
+    <span class="proof-stars">★★★★★</span>
+    200+ 5-Star Google Reviews
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    Licensed &amp; Insured
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+    Same-Day Service
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    Family Owned &amp; Operated
   </div>
 </div>
 
 <!-- SERVICES -->
 <section class="services fade-up" id="services">
-  <div class="section-label">What We Remove</div>
-  <h2 class="section-title">We Haul<br>Everything.</h2>
-  <p class="section-sub">From a single recliner to a full hoarder cleanout — if you want it gone, we'll make it disappear. Text us a photo for a free estimate.</p>
-
+  <div class="section-label">What We Haul</div>
+  <h2 class="section-title">We Take <span class="t-blue">Everything.</span></h2>
+  <p class="section-sub">From a single broken recliner to a full hoarder cleanout — text us a photo and we'll give you a no-obligation estimate on the spot.</p>
   <div class="services-grid">
-    <!-- 1 -->
     <div class="service-card">
-      <div class="service-num">01</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
       <div class="service-name">Household Junk</div>
-      <div class="service-desc">Clutter piling up? We clear it — furniture, boxes, electronics, and everything in between. Fast, clean, and gone.</div>
+      <div class="service-desc">Furniture, electronics, boxes, clothing piles — we clear out whatever's taking up space in your home, fast and clean.</div>
     </div>
-    <!-- 2 -->
     <div class="service-card">
-      <div class="service-num">02</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
       </div>
       <div class="service-name">Appliance Removal</div>
-      <div class="service-desc">Refrigerators, washers, dryers, stoves — we haul old appliances out of your home responsibly, no dolly required on your end.</div>
+      <div class="service-desc">Fridges, washers, dryers, stoves — we haul old appliances out of your home responsibly. No need to drag it to the curb.</div>
     </div>
-    <!-- 3 -->
     <div class="service-card">
-      <div class="service-num">03</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
       </div>
       <div class="service-name">Hot Tub Removal</div>
-      <div class="service-desc">Hot tubs weigh hundreds of pounds and we've removed hundreds of them. We handle the heavy lifting, deconstruction, and disposal.</div>
+      <div class="service-desc">We've removed hundreds of hot tubs. We handle the heavy lifting, deconstruction, and full disposal — you do nothing.</div>
     </div>
-    <!-- 4 -->
     <div class="service-card">
-      <div class="service-num">04</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
       </div>
-      <div class="service-name">Estate & Garage Cleanouts</div>
-      <div class="service-desc">Moving a loved one out or clearing decades of storage? We do full property cleanouts — quick and respectful, every time.</div>
+      <div class="service-name">Estate &amp; Garage Cleanouts</div>
+      <div class="service-desc">Moving a loved one out or clearing decades of storage? We do full property cleanouts — quick, respectful, and thorough.</div>
     </div>
-    <!-- 5 -->
     <div class="service-card">
-      <div class="service-num">05</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
       </div>
       <div class="service-name">Construction Debris</div>
-      <div class="service-desc">Renovation scraps, drywall, flooring, lumber — we clear your job site so the real work can keep moving without the mess.</div>
+      <div class="service-desc">Renovation scraps, drywall, lumber, flooring — we clear your job site so work keeps moving without the mess slowing you down.</div>
     </div>
-    <!-- 6 -->
     <div class="service-card">
-      <div class="service-num">06</div>
       <div class="service-icon-wrap">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
-      <div class="service-name">Yard Waste & Debris</div>
-      <div class="service-desc">Old swing sets, yard trimmings, brush piles, broken fencing — reclaim your outdoor space without a second trip to the dump.</div>
+      <div class="service-name">Yard Waste &amp; Debris</div>
+      <div class="service-desc">Old swing sets, brush piles, broken fencing, yard clippings — reclaim your outdoor space without a trip to the dump.</div>
     </div>
   </div>
 </section>
@@ -1150,16 +929,21 @@
 <!-- ABOUT -->
 <section class="about fade-up" id="about">
   <div class="about-img-wrap">
-    <img id="aboutPhoto" src="" alt="Junk Bros 509 team in Yakima" class="about-img" loading="lazy">
+    <img
+      src="https://static.wixstatic.com/media/f47723_af57e4b3de2f47f0a8432f194550a9c0~mv2.png"
+      alt="Junk Bros owners standing by their truck in Yakima, WA"
+      class="about-img"
+      loading="lazy"
+    >
     <div class="about-badge">
       <div class="about-badge-num">A+</div>
-      <div class="about-badge-label">Rating</div>
+      <div class="about-badge-label">Rated</div>
     </div>
   </div>
   <div class="about-content">
     <div class="section-label">Who We Are</div>
-    <h2 class="section-title">Yakima's Own<br>Haul Crew.</h2>
-    <p class="section-sub">Family owned and locally operated since 2018, Junk Bros 509 was built to give Yakima homeowners a fast, honest alternative to renting a dumpster and doing it yourself. We show up, we haul it, and we leave your space clean.</p>
+    <h2 class="section-title">Yakima's Own Haul Crew.</h2>
+    <p class="section-sub">Family owned and locally operated since 2018, Junk Bros was built to give Yakima homeowners a fast, honest alternative to renting a dumpster. We show up, we haul it, and we leave your space clean.</p>
     <div class="about-stats">
       <div class="about-stat-card">
         <div class="about-stat-num" data-count="200">0</div>
@@ -1170,8 +954,8 @@
         <div class="about-stat-label">Years in Business</div>
       </div>
       <div class="about-stat-card">
-        <div class="about-stat-num" data-count="75">0</div>
-        <div class="about-stat-label">Starting at $75</div>
+        <div class="about-stat-num">$75</div>
+        <div class="about-stat-label">Prices Starting At</div>
       </div>
       <div class="about-stat-card">
         <div class="about-stat-num">7</div>
@@ -1181,7 +965,7 @@
     <ul class="about-trust">
       <li>
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Text us a photo for a same-day no-obligation estimate
+        Text a photo for a same-day no-obligation estimate
       </li>
       <li>
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1189,11 +973,11 @@
       </li>
       <li>
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Transparent upfront pricing — no hidden fees
+        Transparent upfront pricing — no hidden fees ever
       </li>
       <li>
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        We donate and recycle whenever possible — not just landfill
+        We donate and recycle whenever possible
       </li>
     </ul>
   </div>
@@ -1201,12 +985,12 @@
 
 <!-- TESTIMONIALS -->
 <section class="testimonials fade-up" id="reviews">
-  <div class="section-label">Customer Reviews</div>
-  <h2 class="section-title">Locals Trust<br>Junk Bros.</h2>
+  <div class="section-label">What Locals Say</div>
+  <h2 class="section-title">Yakima <span class="t-blue">Trusts</span> Junk Bros.</h2>
   <div class="test-grid">
     <div class="test-card">
       <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"Called at 9am, they were at my house by noon. Cleared out my entire garage — years of junk — in under two hours. Price was fair and they swept up after. Booking them again for my shed."</p>
+      <p class="test-quote">"Called at 9am, they were at my house by noon. Cleared out my entire garage in under two hours. Price was fair and they swept up after. Already booked them again for my shed."</p>
       <div class="test-name">Karen M.</div>
       <div class="test-role">Yakima homeowner</div>
     </div>
@@ -1218,19 +1002,19 @@
     </div>
     <div class="test-card">
       <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"We needed a full estate cleanout after my mom passed. The crew was professional, fast, and genuinely kind. They handled everything with care. I'll recommend Junk Bros 509 to everyone I know."</p>
+      <p class="test-quote">"Needed a full estate cleanout after my mom passed. The crew was professional, fast, and genuinely kind. They handled everything with care. I'll recommend Junk Bros to everyone I know."</p>
       <div class="test-name">Michelle T.</div>
       <div class="test-role">Union Gap, WA</div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREA CTA -->
+<!-- CTA BANNER -->
 <section class="cta-banner fade-up">
   <div class="cta-banner-label">Service Area</div>
   <h2 class="cta-banner-title">Proudly Serving Yakima<br>and Surrounding Areas</h2>
-  <a href="tel:5093148132" class="btn-cta">
-    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+  <a href="tel:5093148132" class="btn-dark">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
     Call or Text (509) 314-8132
   </a>
 </section>
@@ -1240,13 +1024,14 @@
   <div class="contact-info">
     <div class="section-label">Get In Touch</div>
     <h2 class="section-title">Ready to Haul?</h2>
-    <div class="contact-phone">
-      <a href="tel:5093148132">(509) 314-8132</a>
+    <div class="contact-phone-block">
+      <div class="contact-phone-label">Call or Text</div>
+      <div class="contact-phone"><a href="tel:5093148132">(509) 314-8132</a></div>
+      <div class="contact-sub">
+        Email: <a href="mailto:junkbros509@gmail.com">junkbros509@gmail.com</a><br>
+        <span style="font-size:0.8rem;color:var(--text-muted)">Text a photo for a same-day estimate</span>
+      </div>
     </div>
-    <p class="contact-email">
-      Email: <a href="mailto:junkbros509@gmail.com">junkbros509@gmail.com</a><br>
-      <small style="color:var(--text-muted); font-size:0.85rem;">Text a photo for a same-day estimate</small>
-    </p>
     <div class="hours-title">Business Hours</div>
     <ul class="hours-list">
       <li><span>Monday – Saturday</span><span>7:30 AM – 7:30 PM</span></li>
@@ -1294,7 +1079,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand"><span>Junk</span> Bros 509</div>
+    <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros" class="footer-logo">
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -1302,18 +1087,14 @@
       <a href="#contact">Contact</a>
       <a href="tel:5093148132">(509) 314-8132</a>
     </div>
-    <div class="footer-copy">© 2024 Junk Bros 509 · Yakima, WA · All rights reserved</div>
+    <div class="footer-copy">© 2024 Junk Bros · Yakima, WA</div>
   </div>
 </footer>
 
 <script>
-  // Nav scroll
   const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 30);
-  }, { passive: true });
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 30), { passive: true });
 
-  // Mobile nav
   const toggle = document.getElementById('navToggle');
   const overlay = document.getElementById('navOverlay');
   toggle.addEventListener('click', () => {
@@ -1325,35 +1106,18 @@
     document.body.style.overflow = '';
   }
 
-  // About photo from Unsplash
-  fetch('https://api.unsplash.com/photos/random?query=junk+removal+truck+team&orientation=landscape&client_id=X40-Lk7G_Q6Zk-Cn4jXIDNbMzfHlIfj7fdhl-J-5b58')
-    .then(r => r.json())
-    .then(d => {
-      const img = document.getElementById('aboutPhoto');
-      if (d && d.urls) img.src = d.urls.regular;
-    })
-    .catch(() => {
-      document.getElementById('aboutPhoto').src = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&auto=format';
-    });
-
-  // IntersectionObserver for fade-up
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Count-up animation
   function animateCount(el, target, duration = 1800) {
     const start = performance.now();
     const update = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const ease = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(ease * target) + (target >= 100 ? '+' : target === 6 ? '+' : '');
+      const val = Math.round(ease * target);
+      el.textContent = val + (target >= 100 ? '+' : target === 6 ? '+' : '');
       if (progress < 1) requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
@@ -1362,22 +1126,18 @@
   const countObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.querySelectorAll('[data-count]').forEach(el => {
-          animateCount(el, parseInt(el.dataset.count));
-        });
+        e.target.querySelectorAll('[data-count]').forEach(el => animateCount(el, parseInt(el.dataset.count)));
         countObserver.unobserve(e.target);
       }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.hero-stats-bar, .about-stats').forEach(el => countObserver.observe(el));
+  document.querySelectorAll('.about-stats').forEach(el => countObserver.observe(el));
 
-  // Form submit
   function handleForm(e) {
     e.preventDefault();
     const btn = e.target.querySelector('.form-submit');
-    btn.textContent = '✓ Request Sent! We\'ll be in touch soon.';
+    btn.textContent = '✓ Sent! We\'ll be in touch shortly.';
     btn.style.background = '#16a34a';
-    btn.style.borderColor = '#16a34a';
     btn.disabled = true;
   }
 </script>
