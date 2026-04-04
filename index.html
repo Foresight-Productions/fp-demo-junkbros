@@ -60,19 +60,15 @@ body{font-family:var(--fb);background:var(--bg);color:var(--text);overflow-x:hid
 }
 #nav.scrolled{box-shadow:0 4px 40px rgba(7,11,46,0.8);background:rgba(7,11,46,0.99)}
 
-.nav-logo{display:flex;align-items:center;gap:0.6rem;text-decoration:none;flex-shrink:0}
-.nav-logo-icon{
-  width:36px;height:36px;border-radius:8px;
-  background:var(--blue);
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-logo-img-wrap{
+  background:#fff;border-radius:8px;padding:4px 10px;
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--fh);font-weight:900;font-size:0.85rem;
-  color:#fff;letter-spacing:-0.5px;flex-shrink:0;
-  box-shadow:0 0 20px rgba(26,45,243,0.5);
-  transition:box-shadow 200ms ease,transform 200ms ease;
+  transition:transform 200ms ease,box-shadow 200ms ease;
+  box-shadow:0 2px 12px rgba(0,0,0,0.25);
 }
-.nav-logo:hover .nav-logo-icon{box-shadow:0 0 30px rgba(26,45,243,0.7);transform:scale(1.05)}
-.nav-logo-text{font-family:var(--fh);font-weight:800;font-size:1.05rem;color:#fff;letter-spacing:-0.3px;line-height:1}
-.nav-logo-sub{font-size:0.6rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:1px}
+.nav-logo:hover .nav-logo-img-wrap{transform:scale(1.03);box-shadow:0 4px 20px rgba(0,0,0,0.35)}
+.nav-logo-img{height:36px;width:auto;display:block}
 
 .nav-links{display:flex;align-items:center;gap:2rem;flex-shrink:0}
 .nav-links a{font-size:0.83rem;font-weight:500;color:rgba(255,255,255,0.65);text-decoration:none;letter-spacing:0.3px;transition:color 150ms ease}
@@ -576,10 +572,10 @@ footer{background:var(--navy);padding:4rem 7% 2.5rem;border-top:1px solid rgba(2
 <!-- NAV -->
 <header id="nav">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">JB</div>
-    <div>
-      <div class="nav-logo-text">Junk Bros</div>
-      <div class="nav-logo-sub">509 · Yakima, WA</div>
+    <div class="nav-logo-img-wrap">
+      <img src="https://static.wixstatic.com/media/82aa58_eeb10653e74641b8afef9c3a784ba00b~mv2.png" alt="Junk Bros 509" class="nav-logo-img">
+    </div>
+    <div style="display:none">
     </div>
   </a>
   <nav class="nav-links">
