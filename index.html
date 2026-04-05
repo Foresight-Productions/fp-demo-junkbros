@@ -192,7 +192,7 @@
       ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "xPath": ["/html/head/title", "/html/head/meta[@name='description']"]
+        "cssSelector": ["h1", ".hero-sub", ".faq-a", ".pc-price"]
       }
     },
     {
@@ -318,6 +318,22 @@
       "@type": "SpeakableSpecification",
       "@id": "https://www.junkbros509.com/#speakable",
       "cssSelector": [".hero-headline", ".hero-sub", ".faq-a", ".pc-desc"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.junkbros509.com/#jacob-castillo",
+      "name": "Jacob Castillo",
+      "jobTitle": "Co-Owner",
+      "worksFor": {"@id": "https://www.junkbros509.com/#business"},
+      "url": "https://www.yakimaherald.com/exclusives/extra/jacob-castillo-co-owner-of-junk-bros-509/article_5b013311-88b3-56e4-b87a-f0c341626a8c.html",
+      "sameAs": ["https://www.yakimaherald.com/exclusives/extra/jacob-castillo-co-owner-of-junk-bros-509/article_5b013311-88b3-56e4-b87a-f0c341626a8c.html"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.junkbros509.com/#jeremy-castillo",
+      "name": "Jeremy Castillo",
+      "jobTitle": "Co-Owner",
+      "worksFor": {"@id": "https://www.junkbros509.com/#business"}
     }
   ]
 }
@@ -1076,7 +1092,7 @@ footer{background:var(--navy);padding:4rem 7% 2.5rem;border-top:1px solid rgba(2
     <div class="about-content">
       <div class="reveal"><div class="tag">Who We Are</div></div>
       <div class="reveal"><h2 class="h2">Yakima's Own <span class="accent">Haul Crew.</span></h2></div>
-      <div class="reveal"><p class="lead">Founded in 2018 by brothers <strong>Jacob and Jeremy Castillo</strong>, Junk Bros 509 was built to give Yakima homeowners a fast, honest alternative to renting a dumpster. <a href="https://www.yakimaherald.com/exclusives/extra/jacob-castillo-co-owner-of-junk-bros-509/article_5b013311-88b3-56e4-b87a-f0c341626a8c.html" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline">Featured in the Yakima Herald</a>. We show up uniformed, haul it, and leave your space clean.</p></div>
+      <div class="reveal"><p class="lead">Founded in 2018 by brothers <strong><span itemprop="founder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jacob Castillo</span></span> and <span itemprop="founder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jeremy Castillo</span></span></strong>, Junk Bros 509 was built to give Yakima homeowners a fast, honest alternative to renting a dumpster. <a href="https://www.yakimaherald.com/exclusives/extra/jacob-castillo-co-owner-of-junk-bros-509/article_5b013311-88b3-56e4-b87a-f0c341626a8c.html" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline">Featured in the Yakima Herald</a>. We show up uniformed, haul it, and leave your space clean.</p></div>
       <div class="about-stats">
         <div class="stat-card reveal reveal-delay-1"><div class="stat-num" data-count="200">0</div><div class="stat-lbl">5-Star Reviews</div></div>
         <div class="stat-card reveal reveal-delay-2"><div class="stat-num" data-count="7">0</div><div class="stat-lbl">Years in Business</div></div>
