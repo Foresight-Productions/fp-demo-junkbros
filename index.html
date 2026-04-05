@@ -305,7 +305,8 @@
   --fb: 'Inter', sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+body{-webkit-overflow-scrolling:touch;overscroll-behavior-y:none}
 body{font-family:var(--fb);background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 /* ─── NAV ─── */
@@ -466,7 +467,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--text);overflow-x:hid
 @keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
 .hero-right{position:relative;overflow:hidden}
-.hero-photo{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:scale(1.05);transition:transform 8s ease;animation:heroImgIn 1s cubic-bezier(.16,1,.3,1) 0s both}
+.hero-photo{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:scale(1.05) translateZ(0);transition:transform 8s ease;animation:heroImgIn 1s cubic-bezier(.16,1,.3,1) 0s both;will-change:transform}
 @keyframes heroImgIn{from{opacity:0;transform:scale(1.12)}to{opacity:1;transform:scale(1.05)}}
 .hero-photo-overlay{position:absolute;inset:0;background:linear-gradient(to right,var(--navy) 0%,rgba(7,11,46,0.3) 20%,transparent 50%)}
 
@@ -814,6 +815,8 @@ footer{background:var(--navy);padding:4rem 7% 2.5rem;border-top:1px solid rgba(2
 @media(max-width:768px){
   .nav-links{display:none}
   .nav-toggle{display:flex}
+  #nav{justify-content:space-between}
+  .nav-logo{position:absolute;left:50%;transform:translateX(-50%)}
   .hero-left{padding:3rem 5%}
   .hero-btns{flex-direction:column;align-items:flex-start}
   .hero-btns .btn-fill,.hero-btns .btn-ghost{width:100%;max-width:320px;justify-content:center}
@@ -1254,7 +1257,7 @@ footer{background:var(--navy);padding:4rem 7% 2.5rem;border-top:1px solid rgba(2
 <script>
 // Nav
 const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>30),{passive:true});
+let navRaf=false;window.addEventListener('scroll',()=>{if(!navRaf){navRaf=true;requestAnimationFrame(()=>{nav.classList.toggle('scrolled',window.scrollY>30);navRaf=false;});}},{passive:true});
 
 // Mobile nav
 const toggle=document.getElementById('navToggle');
@@ -1304,12 +1307,19 @@ document.querySelectorAll('.svc').forEach(card=>{
   card.addEventListener('mouseleave',()=>{card.style.transform=''});
 });
 
-// Parallax on hero photo
+// Parallax on hero photo — desktop only, rAF-throttled for smooth perf
 const heroPhoto=document.querySelector('.hero-photo');
-if(heroPhoto){
+if(heroPhoto && window.innerWidth>1100){
+  let rafPending=false;
   window.addEventListener('scroll',()=>{
-    const s=window.scrollY;
-    if(s<window.innerHeight){heroPhoto.style.transform=`scale(1.05) translateY(${s*0.12}px)`}
+    if(!rafPending){
+      rafPending=true;
+      requestAnimationFrame(()=>{
+        const s=window.scrollY;
+        if(s<window.innerHeight){heroPhoto.style.transform=`scale(1.05) translateY(${s*0.12}px)`}
+        rafPending=false;
+      });
+    }
   },{passive:true});
 }
 
